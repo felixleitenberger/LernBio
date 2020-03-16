@@ -1,0 +1,162 @@
+[
+  {
+    "question": "Nenne den Zellbestandteil, der in einer Tierzelle nicht vorkommt.",
+    "correctAnswer": "die Zellwand",
+    "wrongAnswer1": "die Zellmembran",
+    "wrongAnswer2": "das Zellplasma",
+    "wrongAnswer3": "der Zellkern",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Benenne den markierten Teil des menschlichen Armskeletts.",
+    "correctAnswer": "die Elle",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "das Wadenbein",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettElle"
+  },
+  {
+    "question": "Benenne den markierten Teil des menschlichen Armskeletts.",
+    "correctAnswer": "die Speiche",
+    "wrongAnswer1": "die Elle",
+    "wrongAnswer2": "das Schienbein",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettSpeiche"
+  },
+  {
+    "question": "Benenne den markierten Teil des menschlichen Armskeletts.",
+    "correctAnswer": "der Oberarmknochen",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "die Fingerknochen",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettOberarm"
+  },
+  {
+    "question": "Benenne den markierten Teil des menschlichen Armskeletts.",
+    "correctAnswer": "die Handwurzelknochen",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "die Fingerknochen",
+    "wrongAnswer3": "der Oberarmknochen",
+    "imageQuestion": "armskelettHandwurzel"
+  },
+  {
+    "question": "Benenne den markierten Teil des menschlichen Armskeletts.",
+    "correctAnswer": "die Fingerknochen",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "der Oberarmknochen",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettFinger"
+  },
+  {
+    "question": "Benenne den markierten Teil des menschlichen Armskeletts.",
+    "correctAnswer": "die Mittelhandknochen",
+    "wrongAnswer1": "die Handmittelknochen",
+    "wrongAnswer2": "die Fingerknochen",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettMittelhand"
+  },
+  {
+    "question": "Einer dieser Fachbegriffe enthält einen Rechtschreibfehler oder einen falschen Artikel. Finde ihn.",
+    "correctAnswer": "das Knochen",
+    "wrongAnswer1": "der Zellkern",
+    "wrongAnswer2": "das Skelett",
+    "wrongAnswer3": "der Nährstoff",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Energie ist sehr wichtig für alle Lebewesen. Nenne die richtige Einheit für die Energiemenge.",
+    "correctAnswer": "Kilojoule (kJ)",
+    "wrongAnswer1": "Volt (V)",
+    "wrongAnswer2": "Ampere (A)",
+    "wrongAnswer3": "Kraft (K)",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Nenne die drei (Grund-)Nährstoffe.",
+    "correctAnswer": "Kohlenhydrate, Fette, Eiweißstoffe",
+    "wrongAnswer1": "Baustoffe, Vitamine, Fette",
+    "wrongAnswer2": "Wasser, Zucker, Proteine",
+    "wrongAnswer3": "Milch, Zucker, Mehl",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Verfolge den Weg der Luft, wenn ein Mensch ausatmet.",
+    "correctAnswer": "Lungenbläschen,  Bronchienäste, Bronchien, Luftröhre, Nase/Mund",
+    "wrongAnswer1": "Mund/Nase, Luftröhre, Bronchien, Bronchienäste, Lungenbläschen",
+    "wrongAnswer2": "Bronchien, Lungenbläschen, Mund/Nase",
+    "wrongAnswer3": "Bronchienäste, Mund/Nase, Luftröhre, Lungenbläschen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Welche Art von Diagramm ist hier zu sehen?",
+    "correctAnswer": "das Säulendiagramm",
+    "wrongAnswer1": "das Liniendiagramm",
+    "wrongAnswer2": "das Balkendiagramm",
+    "wrongAnswer3": "das Kuchendiagramm",
+    "imageQuestion": "saeulendiagramm"
+  },
+  {
+    "question": "Kohlenstoffdioxid-Gas lässt sich mit dieser Probe nachweisen.",
+    "correctAnswer": "die Kalkwasser-Probe",
+    "wrongAnswer1": "die Glimmspan-Probe",
+    "wrongAnswer2": "die Iod-Probe",
+    "wrongAnswer3": "die Fettfleck-Probe",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Vervollständige den Satz: Weißes Licht ist …",
+    "correctAnswer": "ein Gemisch aus vielen unterschiedlich farbigen Lichtsorten.",
+    "wrongAnswer1": "das Gegenteil von schwarzem Licht.",
+    "wrongAnswer2": "eine Mischung aus rotem und grünem Licht.",
+    "wrongAnswer3": "Licht aus dem alle Farben gefiltert wurden.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Luft ist ein Gemisch aus mehreren Gasen. Wähle das Gas aus, das am meisten enthalten ist.",
+    "correctAnswer": "das Stickstoff-Gas",
+    "wrongAnswer1": "das Sauerstoff-Gas",
+    "wrongAnswer2": "das Helium-Gas",
+    "wrongAnswer3": "das Kohlenstoffdioxid-Gas",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Lebensraum und Lebensgemeinschaft bilden zusammen…",
+    "correctAnswer": "ein Ökosystem",
+    "wrongAnswer1": "eine Umwelt",
+    "wrongAnswer2": "eine Familie",
+    "wrongAnswer3": "eine biologische Art",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Definiere den Begriff Bestäubung.",
+    "correctAnswer": "Übertragung des Pollens auf die Narbe durch Tiere oder durch den Wind.",
+    "wrongAnswer1": "Verschmelzen von Spermienzelle und Eizelle.",
+    "wrongAnswer2": "Verbreitung der Samen einer Pflanze.",
+    "wrongAnswer3": "Die Entstehung einer neuen Pflanze aus dem Samen.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Nenne die Aufgabe eines Laubblattes im Pflanzenkörper.",
+    "correctAnswer": "Herstellung von Traubenzucker durch Fotosynthese.",
+    "wrongAnswer1": "Erkennungsmerkmal für Tiere.",
+    "wrongAnswer2": "Transport von Mineralstoffen in Richtung Boden.",
+    "wrongAnswer3": "Anlocken von Insekten und Vögeln.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Dieser Teil der Blüte ist besonders auffällig bei Blüten, die durch Tiere bestäubt werden.",
+    "correctAnswer": "die Kronblätter",
+    "wrongAnswer1": "Der Stempel",
+    "wrongAnswer2": "Der Fruchtknoten",
+    "wrongAnswer3": "Das Laubblatt",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die korrekte Aussage.",
+    "correctAnswer": "Die Spermien werden in den Hoden des Mannes hergestellt.",
+    "wrongAnswer1": "Die Spermien werden in den Eierstöcken des Mannes hergestellt",
+    "wrongAnswer2": "Die Eizellen werden in den Eierstöcken des Mannes hergestellt.",
+    "wrongAnswer3": "Die Spermien werden in den Hoden der Frau hergestellt.",
+    "imageQuestion": ""
+  }
+]
