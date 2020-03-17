@@ -10,57 +10,45 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
-    var questionList = [Question]()
-    var actualQuestionSet = [Question]()
-    var actualQuestionIndex = 0
+    var questionSet = [Question]()
+    var questionIndex = 0
     var score = 0
-    
-    var sizeOfStatusBar = CGFloat()
-    var statusRects = [CAShapeLayer]()
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionView: UIView!
     @IBOutlet var buttons: [UIButton]!
     
-    @IBOutlet weak var statusBar: UIView!
+    @IBOutlet weak var statusBar: QuestionStatusBar!
     @IBOutlet weak var startOverButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getQuestions(for: "B5+")
-        chooseRandomQuestionSet()
-        layoutQuestionView()
+        questionSet = Question.getQuestionSet(for: "B5+")
         startOverButton.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        sizeOfStatusBar = statusBar.frame.width
-        drawStatusRects()
+        statusBar.configure()
+        statusBar.active(for: questionIndex)
+        layoutQuestion()
+        showQuestionImage()
         layoutButtons()
     }
     
-    
-    func getQuestions(for selectedGrades: String...) {
-        for grade in selectedGrades {
-            questionList += Question.get(for: grade)
-        }
-    }
-    
-    func chooseRandomQuestionSet() {
-        for _ in 0...14 {
-            let randomIndex = Int.random(in: 0..<(questionList.count))
-            let randomQuestion = questionList.remove(at: randomIndex)
-            actualQuestionSet.append(randomQuestion)
-            actualQuestionSet.shuffle()
-        }
-    }
-    
-    func layoutQuestionView() {
+    func layoutQuestion() {
         questionView.layer.borderColor = UIColor.systemGray2.cgColor
         questionView.layer.borderWidth = 1
         questionView.layer.cornerRadius = 10
+        questionLabel.text = questionSet[questionIndex].question
+    }
+    
+    func showQuestionImage() {
+        if let image = questionSet[questionIndex].imageQuestion {
+                 guard image != "" else { return }
+                 imageView.image = UIImage(named: image)
+             }
     }
     
     func layoutButtons() {
@@ -71,34 +59,13 @@ class QuizViewController: UIViewController {
             button.backgroundColor = .clear
         }
         
-        statusRects[actualQuestionIndex].strokeColor = UIColor.systemOrange.cgColor
-        statusRects[actualQuestionIndex].lineWidth = 2
-        
         buttons.shuffle()
-        questionLabel.text = actualQuestionSet[actualQuestionIndex].question
-        
-        if let image = actualQuestionSet[actualQuestionIndex].imageQuestion {
-            imageView.image = UIImage(named: image)
-        }
-        buttons[0].setTitle(actualQuestionSet[actualQuestionIndex].correctAnswer, for: .normal)
-        buttons[1].setTitle(actualQuestionSet[actualQuestionIndex].wrongAnswer1, for: .normal)
-        buttons[2].setTitle(actualQuestionSet[actualQuestionIndex].wrongAnswer2, for: .normal)
-        buttons[3].setTitle(actualQuestionSet[actualQuestionIndex].wrongAnswer3, for: .normal)
+        buttons[0].setTitle(questionSet[questionIndex].correctAnswer, for: .normal)
+        buttons[1].setTitle(questionSet[questionIndex].wrongAnswer1, for: .normal)
+        buttons[2].setTitle(questionSet[questionIndex].wrongAnswer2, for: .normal)
+        buttons[3].setTitle(questionSet[questionIndex].wrongAnswer3, for: .normal)
     }
-    
-    func drawStatusRects() {
-        for number in 0...14 {
-            let layer = CAShapeLayer()
-            let sizeOfRect = Double(sizeOfStatusBar / 15.0)
-            let xPos = (sizeOfRect * Double(number)) + 2
-            layer.path = UIBezierPath(roundedRect: CGRect(x: xPos, y: 0, width: sizeOfRect - 4, height: sizeOfRect / 2), cornerRadius: 3).cgPath
-            layer.fillColor = UIColor.clear.cgColor
-            layer.lineWidth = 1
-            layer.strokeColor = UIColor.systemGray2.cgColor
-            statusRects.append(layer)
-            statusBar.layer.addSublayer(layer)
-        }
-    }
+
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         for button in buttons {
@@ -108,14 +75,10 @@ class QuizViewController: UIViewController {
         if checkAnswer(pressedButton: sender, buttonText: sender.titleLabel?.text) {
             sender.backgroundColor = .systemGreen
             score += 1
-            statusRects[actualQuestionIndex].fillColor = UIColor.systemGreen.cgColor
-            statusRects[actualQuestionIndex].strokeColor = UIColor.systemGray2.cgColor
-            statusRects[actualQuestionIndex].lineWidth = 1
+            statusBar.rightAnswer(for: questionIndex)
         } else {
             sender.backgroundColor = .systemRed
-            statusRects[actualQuestionIndex].fillColor = UIColor.systemRed.cgColor
-            statusRects[actualQuestionIndex].strokeColor = UIColor.systemGray2.cgColor
-            statusRects[actualQuestionIndex].lineWidth = 1
+            statusBar.wrongAnswer(for: questionIndex)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
         self.nextQuestion()
@@ -123,7 +86,7 @@ class QuizViewController: UIViewController {
     }
     
     func checkAnswer(pressedButton: UIButton, buttonText: String?) -> Bool {
-        if pressedButton.titleLabel?.text == actualQuestionSet[actualQuestionIndex].correctAnswer {
+        if pressedButton.titleLabel?.text == questionSet[questionIndex].correctAnswer {
             return true
         } else {
             return false
@@ -131,8 +94,12 @@ class QuizViewController: UIViewController {
     }
     
     func nextQuestion() {
-        if actualQuestionIndex < 14 {
-            actualQuestionIndex += 1
+        if questionIndex < 14 {
+            statusBar.notActive(for: questionIndex)
+            questionIndex += 1
+            statusBar.active(for: questionIndex)
+            layoutQuestion()
+            showQuestionImage()
             layoutButtons()
         } else {
             questionView.isHidden = true
@@ -155,18 +122,20 @@ class QuizViewController: UIViewController {
     }
     
     func startNewGame() {
-        getQuestions(for: "B5+")
-        chooseRandomQuestionSet()
+        questionSet = Question.getQuestionSet(for: "B5+")
         score = 0
-        actualQuestionIndex = 0
+        questionIndex = 0
         startOverButton.isHidden = true
         for button in buttons {
             button.isHidden = false
         }
-        for rect in statusRects {
-            rect.fillColor = UIColor.clear.cgColor
-        }
+        
         questionView.isHidden = false
+        
+        statusBar.reset()
+        statusBar.active(for: questionIndex)
+        layoutQuestion()
+        showQuestionImage()
         layoutButtons()
     }
 }

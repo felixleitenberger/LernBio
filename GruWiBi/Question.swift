@@ -18,7 +18,7 @@ struct Question: Codable {
     
     /// Loads the json from Bundle and returns an Array of Question objects
     
-    static func get(for grade: String) -> [Question] {
+    private static func parseQuestionList(for grade: String) -> [Question] {
         var questionList = [Question]()
         if let url = Bundle.main.url(forResource: "\(grade)questions", withExtension: "json") {
             do {
@@ -30,6 +30,23 @@ struct Question: Codable {
             }
         }
         return questionList
+    }
+    
+    /// Returns an array of 15 random questions for the selected grades
+    
+    static func getQuestionSet(for grades: String...) -> [Question] {
+        var fullQuestionList = [Question]()
+        var questionSet = [Question]()
+        for grade in grades {
+            fullQuestionList += parseQuestionList(for: grade)
+        }
+        for _ in 0...14 {
+            let randomIndex = Int.random(in: 0..<(fullQuestionList.count))
+            let randomQuestion = fullQuestionList.remove(at: randomIndex)
+            questionSet.append(randomQuestion)
+            questionSet.shuffle()
+        }
+        return questionSet
     }
 }
 

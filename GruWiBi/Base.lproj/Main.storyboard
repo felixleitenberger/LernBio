@@ -92,11 +92,11 @@
                                     <constraint firstItem="i3F-az-Jkd" firstAttribute="height" secondItem="2Et-XJ-JGd" secondAttribute="height" id="s6D-xh-q3V"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-OJ-4lW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-OJ-4lW" customClass="QuestionStatusBar" customModule="GruWiBi" customModuleProvider="target">
                                 <rect key="frame" x="20" y="54" width="374" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="762-OZ-o0M"/>
+                                    <constraint firstAttribute="height" constant="20" id="eIf-5q-9JK"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CP3-d7-bXI">
@@ -110,19 +110,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="m9D-wc-ndp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8rT-Mo-OKd"/>
+                            <constraint firstItem="m9D-wc-ndp" firstAttribute="width" secondItem="PuO-OJ-4lW" secondAttribute="width" id="9T2-lZ-8nr"/>
                             <constraint firstItem="Ggc-Vy-wct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AeG-76-aOi"/>
                             <constraint firstItem="CP3-d7-bXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Egz-39-9ak"/>
-                            <constraint firstItem="PuO-OJ-4lW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hem-Zu-ccF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m9D-wc-ndp" secondAttribute="trailing" constant="20" id="I5B-0t-EPk"/>
+                            <constraint firstItem="PuO-OJ-4lW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VK4-Yg-ysx"/>
                             <constraint firstItem="m9D-wc-ndp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="VRx-m0-OZS"/>
                             <constraint firstItem="Ggc-Vy-wct" firstAttribute="top" secondItem="m9D-wc-ndp" secondAttribute="bottom" constant="20" id="YSO-HA-xf6"/>
                             <constraint firstItem="CP3-d7-bXI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZJy-pF-9ac"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ggc-Vy-wct" secondAttribute="bottom" constant="20" id="ZuG-ew-zng"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PuO-OJ-4lW" secondAttribute="trailing" constant="20" id="aoT-Ly-PJp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ggc-Vy-wct" secondAttribute="trailing" constant="20" id="bh9-6j-F7l"/>
                             <constraint firstItem="m9D-wc-ndp" firstAttribute="top" secondItem="PuO-OJ-4lW" secondAttribute="bottom" constant="8" symbolic="YES" id="cNa-d8-J13"/>
+                            <constraint firstItem="PuO-OJ-4lW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpc-Td-fPs"/>
                             <constraint firstItem="Ggc-Vy-wct" firstAttribute="height" secondItem="m9D-wc-ndp" secondAttribute="height" id="f3v-IZ-09Z"/>
-                            <constraint firstItem="PuO-OJ-4lW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="oOR-c2-2Rq"/>
                             <constraint firstItem="m9D-wc-ndp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q2U-bD-3EM"/>
                             <constraint firstItem="Ggc-Vy-wct" firstAttribute="top" secondItem="m9D-wc-ndp" secondAttribute="bottom" constant="20" id="w2S-FT-wSY"/>
                         </constraints>
