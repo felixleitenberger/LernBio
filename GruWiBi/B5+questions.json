@@ -121,34 +121,34 @@
   },
   {
     "question": "Lebensraum und Lebensgemeinschaft bilden zusammen…",
-    "correctAnswer": "ein Ökosystem",
-    "wrongAnswer1": "eine Umwelt",
-    "wrongAnswer2": "eine Familie",
-    "wrongAnswer3": "eine biologische Art",
+    "correctAnswer": "ein Ökosystem.",
+    "wrongAnswer1": "eine Umwelt.",
+    "wrongAnswer2": "eine Familie.",
+    "wrongAnswer3": "eine biologische Art.",
     "imageQuestion": ""
   },
   {
     "question": "Definiere den Begriff Bestäubung.",
-    "correctAnswer": "Übertragung des Pollens auf die Narbe durch Tiere oder durch den Wind.",
-    "wrongAnswer1": "Verschmelzen von Spermienzelle und Eizelle.",
-    "wrongAnswer2": "Verbreitung der Samen einer Pflanze.",
-    "wrongAnswer3": "Die Entstehung einer neuen Pflanze aus dem Samen.",
+    "correctAnswer": "Übertragung des Pollens auf die Narbe durch Tiere oder durch den Wind",
+    "wrongAnswer1": "Verschmelzen von Spermienzelle und Eizelle",
+    "wrongAnswer2": "Verbreitung der Samen einer Pflanze",
+    "wrongAnswer3": "Die Entstehung einer neuen Pflanze aus dem Samen",
     "imageQuestion": ""
   },
   {
     "question": "Nenne die Aufgabe eines Laubblattes im Pflanzenkörper.",
-    "correctAnswer": "Herstellung von Traubenzucker durch Fotosynthese.",
-    "wrongAnswer1": "Erkennungsmerkmal für Tiere.",
-    "wrongAnswer2": "Transport von Mineralstoffen in Richtung Boden.",
-    "wrongAnswer3": "Anlocken von Insekten und Vögeln.",
+    "correctAnswer": "Herstellung von Traubenzucker durch Fotosynthese",
+    "wrongAnswer1": "Erkennungsmerkmal für Tiere",
+    "wrongAnswer2": "Transport von Mineralstoffen in Richtung Boden",
+    "wrongAnswer3": "Anlocken von Insekten und Vögeln",
     "imageQuestion": ""
   },
   {
     "question": "Dieser Teil der Blüte ist besonders auffällig bei Blüten, die durch Tiere bestäubt werden.",
     "correctAnswer": "die Kronblätter",
-    "wrongAnswer1": "Der Stempel",
-    "wrongAnswer2": "Der Fruchtknoten",
-    "wrongAnswer3": "Das Laubblatt",
+    "wrongAnswer1": "der Stempel",
+    "wrongAnswer2": "der Fruchtknoten",
+    "wrongAnswer3": "das Laubblatt",
     "imageQuestion": ""
   },
   {

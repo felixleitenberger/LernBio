@@ -14,8 +14,15 @@
 		DC11C75E241A743E00CAF432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC11C75D241A743E00CAF432 /* Assets.xcassets */; };
 		DC11C761241A743E00CAF432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC11C75F241A743E00CAF432 /* LaunchScreen.storyboard */; };
 		DC11C769241A746900CAF432 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC11C768241A746900CAF432 /* Question.swift */; };
+		DC1631E82427B1A600536FA5 /* B8+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1631E62427B1A600536FA5 /* B8+questions.json */; };
+		DC1631E92427B1A600536FA5 /* B5+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1631E72427B1A600536FA5 /* B5+questions.json */; };
+		DC16320B242B515F00536FA5 /* AnimalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16320A242B515F00536FA5 /* AnimalCard.swift */; };
+		DC16320F242B538500536FA5 /* AnimalCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */; };
+		DC163211242B599200536FA5 /* AnimalCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */; };
 		DC4BA55724201A780043280B /* QuestionStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BA55624201A780043280B /* QuestionStatusBar.swift */; };
-		DCE28AB7241D5179002120AD /* B5+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DCE28AB6241D5178002120AD /* B5+questions.json */; };
+		DC8A29FA242CADAE0007FF65 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */; };
+		DC8A29FC242CB5E60007FF65 /* animalCards.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8A29FB242CB5E60007FF65 /* animalCards.json */; };
+		DC929B1B24220BEB00C0C26F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +35,15 @@
 		DC11C760241A743E00CAF432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC11C762241A743E00CAF432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC11C768241A746900CAF432 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DC1631E62427B1A600536FA5 /* B8+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B8+questions.json"; sourceTree = "<group>"; };
+		DC1631E72427B1A600536FA5 /* B5+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B5+questions.json"; sourceTree = "<group>"; };
+		DC16320A242B515F00536FA5 /* AnimalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCard.swift; sourceTree = "<group>"; };
+		DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardsViewController.swift; sourceTree = "<group>"; };
+		DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardDetailViewController.swift; sourceTree = "<group>"; };
 		DC4BA55624201A780043280B /* QuestionStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStatusBar.swift; sourceTree = "<group>"; };
-		DCE28AB6241D5178002120AD /* B5+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B5+questions.json"; sourceTree = "<group>"; };
+		DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		DC8A29FB242CB5E60007FF65 /* animalCards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalCards.json; sourceTree = "<group>"; };
+		DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +78,18 @@
 			children = (
 				DC11C754241A743B00CAF432 /* AppDelegate.swift */,
 				DC11C756241A743B00CAF432 /* SceneDelegate.swift */,
+				DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */,
 				DC11C758241A743B00CAF432 /* QuizViewController.swift */,
+				DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */,
+				DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */,
 				DC4BA55624201A780043280B /* QuestionStatusBar.swift */,
 				DC11C768241A746900CAF432 /* Question.swift */,
+				DC16320A242B515F00536FA5 /* AnimalCard.swift */,
+				DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */,
 				DC11C75A241A743B00CAF432 /* Main.storyboard */,
-				DCE28AB6241D5178002120AD /* B5+questions.json */,
+				DC1631E72427B1A600536FA5 /* B5+questions.json */,
+				DC1631E62427B1A600536FA5 /* B8+questions.json */,
+				DC8A29FB242CB5E60007FF65 /* animalCards.json */,
 				DC11C75D241A743E00CAF432 /* Assets.xcassets */,
 				DC11C75F241A743E00CAF432 /* LaunchScreen.storyboard */,
 				DC11C762241A743E00CAF432 /* Info.plist */,
@@ -135,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC11C761241A743E00CAF432 /* LaunchScreen.storyboard in Resources */,
+				DC8A29FC242CB5E60007FF65 /* animalCards.json in Resources */,
+				DC1631E92427B1A600536FA5 /* B5+questions.json in Resources */,
+				DC1631E82427B1A600536FA5 /* B8+questions.json in Resources */,
 				DC11C75E241A743E00CAF432 /* Assets.xcassets in Resources */,
-				DCE28AB7241D5179002120AD /* B5+questions.json in Resources */,
 				DC11C75C241A743B00CAF432 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,11 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC16320F242B538500536FA5 /* AnimalCardsViewController.swift in Sources */,
+				DC16320B242B515F00536FA5 /* AnimalCard.swift in Sources */,
 				DC4BA55724201A780043280B /* QuestionStatusBar.swift in Sources */,
 				DC11C759241A743B00CAF432 /* QuizViewController.swift in Sources */,
 				DC11C755241A743B00CAF432 /* AppDelegate.swift in Sources */,
 				DC11C757241A743B00CAF432 /* SceneDelegate.swift in Sources */,
 				DC11C769241A746900CAF432 /* Question.swift in Sources */,
+				DC8A29FA242CADAE0007FF65 /* AnimalCell.swift in Sources */,
+				DC163211242B599200536FA5 /* AnimalCardDetailViewController.swift in Sources */,
+				DC929B1B24220BEB00C0C26F /* MainScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

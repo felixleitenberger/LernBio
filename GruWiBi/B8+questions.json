@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Benenne den rot markierten Teil der Nervenzelle.",
+    "correctAnswer": "die Hüllzellen",
+    "wrongAnswer1": "die Dendriten",
+    "wrongAnswer2": "das Axon",
+    "wrongAnswer3": "die Synapse",
+    "imageQuestion": "neuron_huell"
+  },
+  {
+    "question": "Benenne den rot markierten Teil der Nervenzelle.",
+    "correctAnswer": "die Dendriten",
+    "wrongAnswer1": "das Soma",
+    "wrongAnswer2": "die Synapse",
+    "wrongAnswer3": "die Hüllzellen",
+    "imageQuestion": "neuron_dendrit"
+  },
+  {
+    "question": "Benenne den rot markierten Teil der Nervenzelle.",
+    "correctAnswer": "der Zellkern",
+    "wrongAnswer1": "das Soma",
+    "wrongAnswer2": "das Axon",
+    "wrongAnswer3": "der Dendrit",
+    "imageQuestion": "neuron_zellkern"
+  },
+  {
+    "question": "Benenne den rot markierten Teil der Nervenzelle.",
+    "correctAnswer": "eine ankommende Nervenzelle",
+    "wrongAnswer1": "das Soma",
+    "wrongAnswer2": "die Dendriten",
+    "wrongAnswer3": "die Hüllzelle",
+    "imageQuestion": "neuron_neuron"
+  },
+  {
+    "question": "Benenne den rot markierten Teil der Nervenzelle.",
+    "correctAnswer": "das Axon",
+    "wrongAnswer1": "der Dendrit",
+    "wrongAnswer2": "die Synapsen",
+    "wrongAnswer3": "der Zellkern",
+    "imageQuestion": "neuron_axon"
+  },
+  {
+    "question": "Benenne den rot markierten Teil der Nervenzelle.",
+    "correctAnswer": "der Axonhügel",
+    "wrongAnswer1": "der Dendrit",
+    "wrongAnswer2": "die Synapse",
+    "wrongAnswer3": "die Hüllzelle",
+    "imageQuestion": "neuron_axonhuegel"
+  }
+]

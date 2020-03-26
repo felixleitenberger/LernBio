@@ -17,25 +17,31 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionView: UIView!
     @IBOutlet var buttons: [UIButton]!
-    
+    @IBOutlet weak var quitButton: UIButton!
     @IBOutlet weak var statusBar: QuestionStatusBar!
-    @IBOutlet weak var startOverButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionSet = Question.getQuestionSet(for: "B5+")
-        startOverButton.isHidden = true
+        questionSet = Question.getQuestionSet(for: "B5+", "B8+")
+        layoutQuestion()
+        showQuestionImage()
+        layoutButtons()
+        layoutQuitButton()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         statusBar.configure()
         statusBar.active(for: questionIndex)
-        layoutQuestion()
-        showQuestionImage()
-        layoutButtons()
     }
+    
+    
+    func layoutQuitButton() {
+        quitButton.setImage(UIImage(systemName: "xmark.circle.fill", withConfiguration: UIImage.SymbolConfiguration(textStyle: .title1)), for: .normal)
+        quitButton.tintColor = .systemGray2
+    }
+    
     
     func layoutQuestion() {
         questionView.layer.borderColor = UIColor.systemGray2.cgColor
@@ -44,12 +50,14 @@ class QuizViewController: UIViewController {
         questionLabel.text = questionSet[questionIndex].question
     }
     
+    
     func showQuestionImage() {
         if let image = questionSet[questionIndex].imageQuestion {
-                 guard image != "" else { return }
+            guard image != "" else { return imageView.image = nil }
                  imageView.image = UIImage(named: image)
              }
     }
+    
     
     func layoutButtons() {
         for button in buttons {
@@ -58,7 +66,6 @@ class QuizViewController: UIViewController {
             button.layer.cornerRadius = 10
             button.backgroundColor = .clear
         }
-        
         buttons.shuffle()
         buttons[0].setTitle(questionSet[questionIndex].correctAnswer, for: .normal)
         buttons[1].setTitle(questionSet[questionIndex].wrongAnswer1, for: .normal)
@@ -85,6 +92,7 @@ class QuizViewController: UIViewController {
         }
     }
     
+    
     func checkAnswer(pressedButton: UIButton, buttonText: String?) -> Bool {
         if pressedButton.titleLabel?.text == questionSet[questionIndex].correctAnswer {
             return true
@@ -93,7 +101,13 @@ class QuizViewController: UIViewController {
         }
     }
     
+    
     func nextQuestion() {
+        if questionIndex == 13 {
+            quitButton.isHidden = true
+            statusBar.showLastStatusRect()
+        }
+        
         if questionIndex < 14 {
             statusBar.notActive(for: questionIndex)
             questionIndex += 1
@@ -107,9 +121,11 @@ class QuizViewController: UIViewController {
                 button.isHidden = true
             }
             let alert = UIAlertController(title: "Fertig", message: "Du hast \(score) von 15 richtig beantwortet.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+                
             present(alert, animated: true)
-            startOverButton.isHidden = false
         }
         
         for button in buttons {
@@ -117,26 +133,10 @@ class QuizViewController: UIViewController {
         }
     }
     
-    @IBAction func startNewGame(_ sender: UIButton) {
-        startNewGame()
-    }
     
-    func startNewGame() {
-        questionSet = Question.getQuestionSet(for: "B5+")
-        score = 0
-        questionIndex = 0
-        startOverButton.isHidden = true
-        for button in buttons {
-            button.isHidden = false
-        }
-        
-        questionView.isHidden = false
-        
-        statusBar.reset()
-        statusBar.active(for: questionIndex)
-        layoutQuestion()
-        showQuestionImage()
-        layoutButtons()
+    @IBAction func quitQuiz(_ sender: UIButton) {
+        quitButton.isHidden = true
+        dismiss(animated: true, completion: nil)
     }
 }
 
