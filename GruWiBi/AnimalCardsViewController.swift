@@ -17,6 +17,8 @@ class AnimalCardsViewController: UICollectionViewController, UICollectionViewDel
         super.viewDidLoad()
         animalCards = AnimalCard.parseAnimalCardList()
         navigationController?.setNavigationBarHidden(false, animated: true)
+        self.title = "Deine Cards"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         let layout = UICollectionViewFlowLayout()
                layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
@@ -34,7 +36,7 @@ class AnimalCardsViewController: UICollectionViewController, UICollectionViewDel
         cell.logoImage.image = UIImage(named: animalCards[indexPath.row].imageLogo)
         cell.layer.cornerRadius = 10
         cell.layer.borderColor = UIColor.secondarySystemBackground.cgColor
-        cell.layer.borderWidth = 1
+        cell.layer.borderWidth = 3
         return cell
     }
     
