@@ -15,7 +15,7 @@ class AnimalCardsViewController: UICollectionViewController, UICollectionViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        animalCards = AnimalCard.parseAnimalCardList()
+        animalCards = AnimalCard.getUnlockedAnimalCards()
         navigationController?.setNavigationBarHidden(false, animated: true)
         self.title = "Deine Cards"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -35,8 +35,6 @@ class AnimalCardsViewController: UICollectionViewController, UICollectionViewDel
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "animalCell", for: indexPath) as! AnimalCell
         cell.logoImage.image = UIImage(named: animalCards[indexPath.row].imageLogo)
         cell.layer.cornerRadius = 10
-        cell.layer.borderColor = UIColor.secondarySystemBackground.cgColor
-        cell.layer.borderWidth = 3
         return cell
     }
     

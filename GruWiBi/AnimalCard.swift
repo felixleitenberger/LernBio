@@ -24,17 +24,41 @@ struct AnimalCard: Codable {
     
     /// Loads the json from Bundle and returns an Array of AnimalCard objects
     
-    static func parseAnimalCardList() -> [AnimalCard] {
-        var animalCardList = [AnimalCard]()
+    static func getAllAnimalCards() -> [AnimalCard] {
+        var allAnimalCardList = [AnimalCard]()
         if let url = Bundle.main.url(forResource: "animalCards", withExtension: "json") {
             do {
                 let jsonData = try Data(contentsOf: url)
                 let jsonDecoder = JSONDecoder()
-                animalCardList = try jsonDecoder.decode([AnimalCard].self, from: jsonData)
+                allAnimalCardList = try jsonDecoder.decode([AnimalCard].self, from: jsonData)
             } catch {
                 fatalError()
             }
         }
-        return animalCardList
+        return allAnimalCardList
+    }
+    
+    
+    static func unlockNextAnimalCard(){
+        let defaults = UserDefaults.standard
+        var unlockedAnimalCardsIndices = defaults.array(forKey: "UnlockedAnimalCards") as? [Int] ?? [Int]()
+        
+        if getAllAnimalCards().count > unlockedAnimalCardsIndices.count {
+            unlockedAnimalCardsIndices.append(unlockedAnimalCardsIndices.count)
+            defaults.set(unlockedAnimalCardsIndices, forKey: "UnlockedAnimalCards")
+        }
+    }
+    
+    
+    static func getUnlockedAnimalCards() -> [AnimalCard] {
+        let defaults = UserDefaults.standard
+        let unlockedAnimalCardIndices = defaults.array(forKey: "UnlockedAnimalCards") as? [Int] ?? [Int]()
+        let allAnimalCards = getAllAnimalCards()
+        var unlockedAnimalCards = [AnimalCard]()
+        
+        for index in unlockedAnimalCardIndices {
+            unlockedAnimalCards.append(allAnimalCards[index])
+        }
+        return unlockedAnimalCards
     }
 }

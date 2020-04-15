@@ -26,4 +26,7 @@ class MainScreenViewController: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func learnButtonPressed(_ sender: UIButton) {
+        AnimalCard.unlockNextAnimalCard()
+    }
 }

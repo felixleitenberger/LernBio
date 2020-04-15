@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,25 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinguine" translatesAutoresizingMaskIntoConstraints="NO" id="dRg-4M-tad">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crabucateLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dRg-4M-tad">
+                                <rect key="frame" x="100" y="0.0" width="214" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo by Paul Carroll on Unsplash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-Tg-48i">
-                                <rect key="frame" x="290" y="868" width="104" height="8"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="6"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="sOz-Tg-48i" secondAttribute="bottom" constant="20" id="2wm-Ig-DzN"/>
-                            <constraint firstAttribute="trailing" secondItem="sOz-Tg-48i" secondAttribute="trailing" constant="20" id="7dT-Db-fEx"/>
                             <constraint firstAttribute="bottom" secondItem="dRg-4M-tad" secondAttribute="bottom" id="Fzd-bE-QHC"/>
                             <constraint firstItem="dRg-4M-tad" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RDk-wX-9Te"/>
-                            <constraint firstAttribute="trailing" secondItem="dRg-4M-tad" secondAttribute="trailing" id="Xvd-va-i5M"/>
-                            <constraint firstItem="sOz-Tg-48i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="qkj-a6-Z0S"/>
-                            <constraint firstItem="dRg-4M-tad" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vLS-Jk-F1I"/>
+                            <constraint firstAttribute="trailing" secondItem="dRg-4M-tad" secondAttribute="trailing" constant="100" id="Xvd-va-i5M"/>
+                            <constraint firstItem="dRg-4M-tad" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="100" id="vLS-Jk-F1I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -44,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pinguine" width="375" height="812"/>
+        <image name="crabucateLogo" width="1087" height="904"/>
     </resources>
 </document>

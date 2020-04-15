@@ -9,10 +9,11 @@
 import UIKit
 
 class QuizViewController: UIViewController {
-
+    
     var questionSet = [Question]()
     var questionIndex = 0
     var score = 0
+    var results = [Bool]()
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionView: UIView!
@@ -54,8 +55,8 @@ class QuizViewController: UIViewController {
     func showQuestionImage() {
         if let image = questionSet[questionIndex].imageQuestion {
             guard image != "" else { return imageView.image = nil }
-                 imageView.image = UIImage(named: image)
-             }
+            imageView.image = UIImage(named: image)
+        }
     }
     
     
@@ -72,12 +73,14 @@ class QuizViewController: UIViewController {
         buttons[2].setTitle(questionSet[questionIndex].wrongAnswer2, for: .normal)
         buttons[3].setTitle(questionSet[questionIndex].wrongAnswer3, for: .normal)
     }
-
+    
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         for button in buttons {
             button.isEnabled = false
         }
+        
+        results.append(checkAnswer(pressedButton: sender, buttonText: sender.titleLabel?.text))
         
         if checkAnswer(pressedButton: sender, buttonText: sender.titleLabel?.text) {
             sender.backgroundColor = .systemGreen
@@ -88,7 +91,7 @@ class QuizViewController: UIViewController {
             statusBar.wrongAnswer(for: questionIndex)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-        self.nextQuestion()
+            self.nextQuestion()
         }
     }
     
@@ -120,17 +123,56 @@ class QuizViewController: UIViewController {
             for button in buttons {
                 button.isHidden = true
             }
-            let alert = UIAlertController(title: "Fertig", message: "Du hast \(score) von 15 richtig beantwortet.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                self.dismiss(animated: true, completion: nil)
-            }))
-                
-            present(alert, animated: true)
+            questionView.isHidden = false
+            questionView.layer.borderWidth = 0
+            imageView.isHidden = true
+            questionLabel.text = "Eine deiner Antworten wird zufällig ausgewählt..."
+            questionLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+            questionLabel.textColor = .systemGray
+            evaluate()
         }
         
         for button in buttons {
             button.isEnabled = true
         }
+    }
+    
+    
+    func evaluate() {
+        let relevantAnswerIndex = Int.random(in: 0...14)
+        
+        if results[relevantAnswerIndex] {
+            AnimalCard.unlockNextAnimalCard()
+            print("AnimalCardUnlocked")
+        }
+        
+        var title: String {
+            if results[relevantAnswerIndex] {
+                return "Glückwunsch!"
+            } else {
+                return "Schade..."
+            }
+        }
+        
+        var message: String {
+            if results[relevantAnswerIndex] {
+                return "Frage \(relevantAnswerIndex + 1) wurde ausgewählt.\nSie wurde richtig beantwortet!\nSuper! Du hast eine Animal-Card freigeschaltet!"
+            } else {
+                return "Frage \(relevantAnswerIndex + 1) wurde ausgewählt.\nSie wurde leider falsch beantwortet!\nVersuch's doch einfach nochmal."
+            }
+        }
+        
+        statusBar.animateAfterQuiz(to: relevantAnswerIndex, completed: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    self.dismiss(animated: true, completion: nil)
+                }))
+                
+                self.present(alert, animated: true)
+                self.questionView.isHidden = true
+            }
+        })
     }
     
     

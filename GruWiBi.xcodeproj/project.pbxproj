@@ -21,8 +21,8 @@
 		DC163211242B599200536FA5 /* AnimalCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */; };
 		DC4BA55724201A780043280B /* QuestionStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BA55624201A780043280B /* QuestionStatusBar.swift */; };
 		DC8A29FA242CADAE0007FF65 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */; };
-		DC8A29FC242CB5E60007FF65 /* animalCards.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8A29FB242CB5E60007FF65 /* animalCards.json */; };
 		DC929B1B24220BEB00C0C26F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */; };
+		DCED1D902445C81A00D80082 /* animalCards.json in Resources */ = {isa = PBXBuildFile; fileRef = DCED1D8F2445C81A00D80082 /* animalCards.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,8 @@
 		DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardDetailViewController.swift; sourceTree = "<group>"; };
 		DC4BA55624201A780043280B /* QuestionStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStatusBar.swift; sourceTree = "<group>"; };
 		DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
-		DC8A29FB242CB5E60007FF65 /* animalCards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalCards.json; sourceTree = "<group>"; };
 		DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		DCED1D8F2445C81A00D80082 /* animalCards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalCards.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 				DC11C75A241A743B00CAF432 /* Main.storyboard */,
 				DC1631E72427B1A600536FA5 /* B5+questions.json */,
 				DC1631E62427B1A600536FA5 /* B8+questions.json */,
-				DC8A29FB242CB5E60007FF65 /* animalCards.json */,
+				DCED1D8F2445C81A00D80082 /* animalCards.json */,
 				DC11C75D241A743E00CAF432 /* Assets.xcassets */,
 				DC11C75F241A743E00CAF432 /* LaunchScreen.storyboard */,
 				DC11C762241A743E00CAF432 /* Info.plist */,
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC11C761241A743E00CAF432 /* LaunchScreen.storyboard in Resources */,
-				DC8A29FC242CB5E60007FF65 /* animalCards.json in Resources */,
+				DCED1D902445C81A00D80082 /* animalCards.json in Resources */,
 				DC1631E92427B1A600536FA5 /* B5+questions.json in Resources */,
 				DC1631E82427B1A600536FA5 /* B8+questions.json in Resources */,
 				DC11C75E241A743E00CAF432 /* Assets.xcassets in Resources */,
