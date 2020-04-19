@@ -39,6 +39,17 @@ struct AnimalCard: Codable {
     }
     
     
+    static func isThereAnyAnimalCardToUnlock() -> Bool {
+        let defaults = UserDefaults.standard
+        let unlockedAnimalCardsIndices = defaults.array(forKey: "UnlockedAnimalCards") as? [Int] ?? [Int]()
+        if getAllAnimalCards().count > unlockedAnimalCardsIndices.count {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    
     static func unlockNextAnimalCard(){
         let defaults = UserDefaults.standard
         var unlockedAnimalCardsIndices = defaults.array(forKey: "UnlockedAnimalCards") as? [Int] ?? [Int]()
@@ -46,6 +57,8 @@ struct AnimalCard: Codable {
         if getAllAnimalCards().count > unlockedAnimalCardsIndices.count {
             unlockedAnimalCardsIndices.append(unlockedAnimalCardsIndices.count)
             defaults.set(unlockedAnimalCardsIndices, forKey: "UnlockedAnimalCards")
+        } else {
+            print("Can't add any more! \(unlockedAnimalCardsIndices.count)")
         }
     }
     

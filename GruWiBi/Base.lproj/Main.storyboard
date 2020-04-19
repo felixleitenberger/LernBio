@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p1N-dy-8zg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--Menü-->
         <scene sceneID="8ru-9J-Rj8">
             <objects>
-                <viewController title="Menü" id="J0N-5R-IPc" customClass="MainScreenViewController" customModule="GruWiBi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Menü" id="J0N-5R-IPc" customClass="MainScreenViewController" customModule="GWB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgS-P1-LxH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g8v-tP-POu" kind="show" id="8FO-HC-eEL"/>
+                                    <segue destination="g8v-tP-POu" kind="show" identifier="toAnimalCards" id="8FO-HC-eEL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,7 +89,7 @@
         <!--Deine Cards-->
         <scene sceneID="6jc-f9-1Qt">
             <objects>
-                <collectionViewController title="Deine Cards" id="g8v-tP-POu" customClass="AnimalCardsViewController" customModule="GruWiBi" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Cards" title="Deine Cards" id="g8v-tP-POu" customClass="AnimalCardsViewController" customModule="GWB" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="BVu-rH-tZ2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +101,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animalCell" id="1fj-wG-Ei1" customClass="AnimalCell" customModule="GruWiBi" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animalCell" id="1fj-wG-Ei1" customClass="AnimalCell" customModule="GWB" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R0f-G9-4sI">
@@ -139,7 +139,7 @@
         <!--Animal Card Detail View Controller-->
         <scene sceneID="xLo-g8-Maq">
             <objects>
-                <viewController storyboardIdentifier="animalCardDetail" id="DY0-18-yUV" customClass="AnimalCardDetailViewController" customModule="GruWiBi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="animalCardDetail" id="DY0-18-yUV" customClass="AnimalCardDetailViewController" customModule="GWB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O3v-rx-alb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,12 +215,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESj-ee-5rk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3979.7101449275365" y="150"/>
+            <point key="canvasLocation" x="2783" y="140"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="QuizView" id="BYZ-38-t0r" customClass="QuizViewController" customModule="GruWiBi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizView" id="BYZ-38-t0r" customClass="QuizViewController" customModule="GWB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,7 +302,7 @@
                                     <constraint firstItem="i3F-az-Jkd" firstAttribute="height" secondItem="2Et-XJ-JGd" secondAttribute="height" id="s6D-xh-q3V"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-OJ-4lW" customClass="QuestionStatusBar" customModule="GruWiBi" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-OJ-4lW" customClass="QuestionStatusBar" customModule="GWB" customModuleProvider="target">
                                 <rect key="frame" x="20" y="44" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -357,7 +357,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yI0-uC-IVA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1N-dy-8zg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navController" automaticallyAdjustsScrollViewInsets="NO" id="p1N-dy-8zg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tbm-I6-HeG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

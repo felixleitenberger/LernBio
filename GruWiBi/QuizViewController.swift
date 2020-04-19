@@ -126,7 +126,7 @@ class QuizViewController: UIViewController {
             questionView.isHidden = false
             questionView.layer.borderWidth = 0
             imageView.isHidden = true
-            questionLabel.text = "Eine deiner Antworten wird zufällig ausgewählt..."
+            questionLabel.text = "Eine deiner Antworten wird zufällig ausgewählt... \nWenn die Antwort richtig ist, schaltest du eine Card frei."
             questionLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
             questionLabel.textColor = .systemGray
             evaluate()
@@ -140,37 +140,44 @@ class QuizViewController: UIViewController {
     
     func evaluate() {
         let relevantAnswerIndex = Int.random(in: 0...14)
-        
-        if results[relevantAnswerIndex] {
-            AnimalCard.unlockNextAnimalCard()
-            print("AnimalCardUnlocked")
-        }
-        
-        var title: String {
-            if results[relevantAnswerIndex] {
-                return "Glückwunsch!"
-            } else {
-                return "Schade..."
-            }
-        }
-        
-        var message: String {
-            if results[relevantAnswerIndex] {
-                return "Frage \(relevantAnswerIndex + 1) wurde ausgewählt.\nSie wurde richtig beantwortet!\nSuper! Du hast eine Animal-Card freigeschaltet!"
-            } else {
-                return "Frage \(relevantAnswerIndex + 1) wurde ausgewählt.\nSie wurde leider falsch beantwortet!\nVersuch's doch einfach nochmal."
-            }
-        }
+        let isAnimalCardUnlocked = results[relevantAnswerIndex]
         
         statusBar.animateAfterQuiz(to: relevantAnswerIndex, completed: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    self.dismiss(animated: true, completion: nil)
-                }))
-                
-                self.present(alert, animated: true)
                 self.questionView.isHidden = true
+                
+                if isAnimalCardUnlocked && AnimalCard.isThereAnyAnimalCardToUnlock() {
+                    AnimalCard.unlockNextAnimalCard()
+                    if let animal = AnimalCard.getUnlockedAnimalCards().last {
+                        let alertVC = GWBAlertVC(title: "Card freigeschaltet!", message: "Herzlichen Glückwunsch! Ein neues interessantes Tier befindet sich in deinen Cards.\nEs heißt \(animal.name).", buttonTitle: "Cool! Zum Menü", animalCardImage: UIImage(named: animal.imageLogo))
+                        alertVC.modalPresentationStyle = .overFullScreen
+                        alertVC.modalTransitionStyle = .crossDissolve
+                        alertVC.buttonAction = {
+                            self.dismiss(animated: true) {
+                            }
+                        }
+                        self.present(alertVC, animated: true)
+                    }
+                    
+                } else if !isAnimalCardUnlocked {
+                    let alertVC = GWBAlertVC(title: "Schade...", message: "Die zufällig ausgewählte Antwort war falsch.\nVersuch's einfach nochmal!", buttonTitle: "Zum Menü", animalCardImage: nil)
+                    alertVC.modalPresentationStyle = .overFullScreen
+                    alertVC.modalTransitionStyle = .crossDissolve
+                    alertVC.buttonAction = {
+                        self.dismiss(animated: true) {
+                        }
+                    }
+                    self.present(alertVC, animated: true)
+                } else {
+                    let alertVC = GWBAlertVC(title: "Heavy Player, ha!", message: "Alle Cards sind schon freigeschalten. Vielleicht kommen mit dem nächsten Update ja neue Cards!", buttonTitle: "Zum Menü", animalCardImage: nil)
+                    alertVC.modalPresentationStyle = .overFullScreen
+                    alertVC.modalTransitionStyle = .crossDissolve
+                    alertVC.buttonAction = {
+                        self.dismiss(animated: true) {
+                        }
+                    }
+                    self.present(alertVC, animated: true)
+                }
             }
         })
     }

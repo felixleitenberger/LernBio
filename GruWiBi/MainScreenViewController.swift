@@ -27,6 +27,12 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func learnButtonPressed(_ sender: UIButton) {
-        AnimalCard.unlockNextAnimalCard()
+        let alert = GWBAlertVC(title: "Title Title Title", message: "message message message message message message", buttonTitle: "Cool", animalCardImage: UIImage(named: "tamandua_logo"))
+        alert.modalPresentationStyle = .overFullScreen
+        alert.modalTransitionStyle = .crossDissolve
+        
+        present(alert, animated: true, completion: nil)
     }
 }
+
+
