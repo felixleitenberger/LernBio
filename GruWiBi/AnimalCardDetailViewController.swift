@@ -55,7 +55,6 @@ class AnimalCardDetailViewController: UIViewController {
         name.text = animal?.name
         name.textColor = layoutMainColor
         scientificName.text = animal?.nameScientific
-        scientificName.font = UIFont.preferredFont(forTextStyle: .footnote)
     }
     
     
@@ -71,7 +70,7 @@ class AnimalCardDetailViewController: UIViewController {
 
             let factLabel = UILabel(frame: scrollViewFrame)
             factLabel.numberOfLines = 0
-            factLabel.font = UIFont.preferredFont(forTextStyle: .body)
+            factLabel.font = UIFont.systemFont(ofSize: 30)
             factLabel.textColor = .systemGray
             factLabel.minimumScaleFactor = 0.5
             factLabel.adjustsFontSizeToFitWidth = true

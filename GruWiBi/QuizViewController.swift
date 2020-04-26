@@ -29,10 +29,6 @@ class QuizViewController: UIViewController {
         showQuestionImage()
         layoutButtons()
         layoutQuitButton()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         statusBar.configure()
         statusBar.active(for: questionIndex)
     }

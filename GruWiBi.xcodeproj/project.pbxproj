@@ -14,7 +14,6 @@
 		DC11C75E241A743E00CAF432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC11C75D241A743E00CAF432 /* Assets.xcassets */; };
 		DC11C761241A743E00CAF432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC11C75F241A743E00CAF432 /* LaunchScreen.storyboard */; };
 		DC11C769241A746900CAF432 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC11C768241A746900CAF432 /* Question.swift */; };
-		DC1631E82427B1A600536FA5 /* B8+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1631E62427B1A600536FA5 /* B8+questions.json */; };
 		DC1631E92427B1A600536FA5 /* B5+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1631E72427B1A600536FA5 /* B5+questions.json */; };
 		DC16320B242B515F00536FA5 /* AnimalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16320A242B515F00536FA5 /* AnimalCard.swift */; };
 		DC16320F242B538500536FA5 /* AnimalCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */; };
@@ -22,6 +21,7 @@
 		DC4BA55724201A780043280B /* QuestionStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BA55624201A780043280B /* QuestionStatusBar.swift */; };
 		DC6F2DE52449E56900FF3D66 /* GWBBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F2DE32449E56900FF3D66 /* GWBBodyLabel.swift */; };
 		DC6F2DE62449E56900FF3D66 /* GWBTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F2DE42449E56900FF3D66 /* GWBTitleLabel.swift */; };
+		DC836E99244EF97B00893BB5 /* B8+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC836E98244EF97B00893BB5 /* B8+questions.json */; };
 		DC8A29FA242CADAE0007FF65 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */; };
 		DC929B1B24220BEB00C0C26F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */; };
 		DCED1D902445C81A00D80082 /* animalCards.json in Resources */ = {isa = PBXBuildFile; fileRef = DCED1D8F2445C81A00D80082 /* animalCards.json */; };
@@ -41,7 +41,6 @@
 		DC11C760241A743E00CAF432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC11C762241A743E00CAF432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC11C768241A746900CAF432 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		DC1631E62427B1A600536FA5 /* B8+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B8+questions.json"; sourceTree = "<group>"; };
 		DC1631E72427B1A600536FA5 /* B5+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B5+questions.json"; sourceTree = "<group>"; };
 		DC16320A242B515F00536FA5 /* AnimalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCard.swift; sourceTree = "<group>"; };
 		DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardsViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		DC4BA55624201A780043280B /* QuestionStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStatusBar.swift; sourceTree = "<group>"; };
 		DC6F2DE32449E56900FF3D66 /* GWBBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBBodyLabel.swift; sourceTree = "<group>"; };
 		DC6F2DE42449E56900FF3D66 /* GWBTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBTitleLabel.swift; sourceTree = "<group>"; };
+		DC836E98244EF97B00893BB5 /* B8+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B8+questions.json"; sourceTree = "<group>"; };
 		DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		DCED1D8F2445C81A00D80082 /* animalCards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalCards.json; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */,
 				DC11C75A241A743B00CAF432 /* Main.storyboard */,
 				DC1631E72427B1A600536FA5 /* B5+questions.json */,
-				DC1631E62427B1A600536FA5 /* B8+questions.json */,
+				DC836E98244EF97B00893BB5 /* B8+questions.json */,
 				DCED1D8F2445C81A00D80082 /* animalCards.json */,
 				DC11C75D241A743E00CAF432 /* Assets.xcassets */,
 				DC11C75F241A743E00CAF432 /* LaunchScreen.storyboard */,
@@ -206,9 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC11C761241A743E00CAF432 /* LaunchScreen.storyboard in Resources */,
+				DC836E99244EF97B00893BB5 /* B8+questions.json in Resources */,
 				DCED1D902445C81A00D80082 /* animalCards.json in Resources */,
 				DC1631E92427B1A600536FA5 /* B5+questions.json in Resources */,
-				DC1631E82427B1A600536FA5 /* B8+questions.json in Resources */,
 				DC11C75E241A743E00CAF432 /* Assets.xcassets in Resources */,
 				DC11C75C241A743B00CAF432 /* Main.storyboard in Resources */,
 			);
@@ -383,6 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3L732D2U5;
 				INFOPLIST_FILE = GruWiBi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3L732D2U5;
 				INFOPLIST_FILE = GruWiBi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,7 +10,8 @@ import UIKit
 
 class QuestionStatusBar: UIView {
     
-    var statusRects = [CAShapeLayer]()
+    @IBOutlet var statusRects: [UIView]!
+    
     var timer: Timer?
     var timer2: Timer?
     
@@ -18,54 +19,45 @@ class QuestionStatusBar: UIView {
         super.init(coder: coder)
     }
     
+    
     func configure() {
-        for number in 0...14 {
-            let layer = CAShapeLayer()
-            let sizeOfRect = Double(self.frame.width / 15.0)
-            let heightOfView = Double(self.frame.height)
-            let xPos = (sizeOfRect * Double(number)) + 2
-            layer.path = UIBezierPath(roundedRect: CGRect(x: xPos, y: heightOfView / 2 - 5, width: sizeOfRect - 4, height: sizeOfRect / 2), cornerRadius: 3).cgPath
-            layer.fillColor = UIColor.clear.cgColor
-            layer.lineWidth = 1
-            layer.strokeColor = UIColor.systemGray2.cgColor
-            statusRects.append(layer)
-            self.layer.addSublayer(layer)
-            
-            if number == 14 {
-                layer.isHidden = true
-            }
+        for rect in statusRects {
+            rect.layer.cornerRadius = 3
+            rect.layer.borderWidth = 1
+            rect.layer.borderColor = UIColor.systemGray2.cgColor
         }
+        statusRects[14].layer.borderColor = UIColor.clear.cgColor
     }
     
     
     func active(for index: Int) {
-        statusRects[index].strokeColor = UIColor.systemOrange.cgColor
-        statusRects[index].lineWidth = 2
+        statusRects[index].layer.borderColor = UIColor.systemOrange.cgColor
+        statusRects[index].layer.borderWidth = 2
     }
     
     
     func notActive(for index: Int) {
-        statusRects[index].strokeColor = UIColor.clear.cgColor
-        statusRects[index].lineWidth = 1
+        statusRects[index].layer.borderColor = UIColor.clear.cgColor
+        statusRects[index].layer.borderWidth = 1
     }
     
     
     func rightAnswer(for index: Int) {
-        statusRects[index].fillColor = UIColor.systemGreen.cgColor
-        statusRects[index].strokeColor = UIColor.clear.cgColor
-        statusRects[index].lineWidth = 1
+        statusRects[index].backgroundColor = UIColor.systemGreen
+        statusRects[index].layer.borderColor = UIColor.clear.cgColor
+        statusRects[index].layer.borderWidth = 1
     }
     
     
     func wrongAnswer(for index: Int) {
-        statusRects[index].fillColor = UIColor.systemRed.cgColor
-        statusRects[index].strokeColor = UIColor.clear.cgColor
-        statusRects[index].lineWidth = 1
+        statusRects[index].backgroundColor = UIColor.systemRed
+        statusRects[index].layer.borderColor = UIColor.clear.cgColor
+        statusRects[index].layer.borderWidth = 1
     }
     
     
     func showLastStatusRect() {
-        statusRects[14].isHidden = false
+        statusRects[14].layer.borderColor = UIColor.systemGray2.cgColor
     }
     
     
@@ -74,46 +66,54 @@ class QuestionStatusBar: UIView {
         var countOff = 0
         var round = 0
         
-        timer = Timer.scheduledTimer(withTimeInterval: 0.08, repeats: true){ t in
-            self.statusRects[countOn].transform = CATransform3DMakeScale(1, 1.5, 1)
+        timer = Timer.scheduledTimer(withTimeInterval: 0.08, repeats: true) { t in
+            UIView.animate(withDuration: 0.08, delay: 0, animations: {
+                self.statusRects[countOn].transform = CGAffineTransform(translationX: 0, y: 10)
+            })
             countOn += 1
-            
+
             if countOn == 15 {
                 round += 1
                 countOn = 0
             }
-            
+
             if round >= 2 {
                 t.invalidate()
             }
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
             self.timer2 = Timer.scheduledTimer(withTimeInterval: 0.08, repeats: true){ t in
-                self.statusRects[countOff].transform = CATransform3DMakeScale(1, 1, 1)
+                UIView.animate(withDuration: 0.08, delay: 0, animations: {
+                self.statusRects[countOff].transform = CGAffineTransform(translationX: 0, y: 0)
+                })
                 countOff += 1
                 if countOff == 15 {
                     countOff = 0
                 }
-                
+
                 if round >= 2 && countOff == 0 {
                     t.invalidate()
                     self.timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true){t in
-                        self.statusRects[countOn].transform = CATransform3DMakeTranslation(0, 20, 0)
+                        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn, animations: {
+                            self.statusRects[countOn].transform = CGAffineTransform(translationX: 0, y: 10)
+                        })
                         if countOn == index {
                             t.invalidate()
-                            
+
                         }
                         countOn += 1
                     }
-                    
+
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                         self.timer2 = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true){ t in
                             if countOff >= index {
                                 t.invalidate()
                                 completed()
                             } else {
-                                self.statusRects[countOff].transform = CATransform3DMakeScale(1, 1, 1)
+                                UIView.animate(withDuration: 0.2, delay: 0, animations: {
+                                self.statusRects[countOff].transform = CGAffineTransform(translationX: 0, y: 0)
+                                })
                                 countOff += 1
                             }
                         }
@@ -121,12 +121,12 @@ class QuestionStatusBar: UIView {
                 }
             }
         }
-        }
+    }
     
     
     func reset() {
         for rect in statusRects {
-            rect.fillColor = UIColor.clear.cgColor
+            rect.backgroundColor = UIColor.clear
         }
     }
 }
