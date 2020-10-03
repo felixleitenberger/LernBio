@@ -35,7 +35,7 @@ class QuizViewController: UIViewController {
     
     
     func layoutQuitButton() {
-        quitButton.setImage(UIImage(systemName: "xmark.circle.fill", withConfiguration: UIImage.SymbolConfiguration(textStyle: .title1)), for: .normal)
+        quitButton.setImage(UIImage(named: "cancel"), for: .normal)
         quitButton.tintColor = .systemGray2
     }
     
@@ -78,15 +78,26 @@ class QuizViewController: UIViewController {
         
         results.append(checkAnswer(pressedButton: sender, buttonText: sender.titleLabel?.text))
         
+        var time: Double
+        
         if checkAnswer(pressedButton: sender, buttonText: sender.titleLabel?.text) {
+            time = 0.5
             sender.backgroundColor = .systemGreen
             score += 1
             statusBar.rightAnswer(for: questionIndex)
         } else {
+            time = 1.0
             sender.backgroundColor = .systemRed
             statusBar.wrongAnswer(for: questionIndex)
+            
+            for button in buttons {
+                if button.titleLabel?.text == questionSet[questionIndex].correctAnswer {
+                    button.layer.borderColor = UIColor.systemGreen.cgColor
+                    button.layer.borderWidth = 3
+                }
+            }
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + time) {
             self.nextQuestion()
         }
     }
@@ -145,29 +156,29 @@ class QuizViewController: UIViewController {
                 if isAnimalCardUnlocked && AnimalCard.isThereAnyAnimalCardToUnlock() {
                     AnimalCard.unlockNextAnimalCard()
                     if let animal = AnimalCard.getUnlockedAnimalCards().last {
-                        let alertVC = GWBAlertVC(title: "Card freigeschaltet!", message: "Herzlichen Glückwunsch! Ein neues interessantes Tier befindet sich in deinen Cards.\nEs heißt \(animal.name).", buttonTitle: "Cool! Zum Menü", animalCardImage: UIImage(named: animal.imageLogo))
-                        alertVC.modalPresentationStyle = .overFullScreen
-                        alertVC.modalTransitionStyle = .crossDissolve
+                        let alertVC = GWBAlertVC(title: "Card freigeschaltet!", message: "Herzlichen Glückwunsch! Ein neues Tier befindet sich in deinen Cards.\nEs heißt \(animal.name).", buttonTitle: "Cool! Zu den Cards!", animalCardImage: UIImage(named: animal.imageLogo))
                         alertVC.buttonAction = {
                             self.dismiss(animated: true) {
+                                if let vc = self.storyboard?.instantiateViewController(identifier: "Cards") {
+                                    if let navController = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first?.rootViewController as? UINavigationController {
+                                        navController.pushViewController(vc, animated: true)
+                                    }
+                                }
                             }
                         }
                         self.present(alertVC, animated: true)
                     }
-                    
-                } else if !isAnimalCardUnlocked {
+                }
+                
+                else if !isAnimalCardUnlocked {
                     let alertVC = GWBAlertVC(title: "Schade...", message: "Die zufällig ausgewählte Antwort war falsch.\nVersuch's einfach nochmal!", buttonTitle: "Zum Menü", animalCardImage: nil)
-                    alertVC.modalPresentationStyle = .overFullScreen
-                    alertVC.modalTransitionStyle = .crossDissolve
                     alertVC.buttonAction = {
                         self.dismiss(animated: true) {
                         }
                     }
                     self.present(alertVC, animated: true)
                 } else {
-                    let alertVC = GWBAlertVC(title: "Heavy Player, ha!", message: "Alle Cards sind schon freigeschalten. Vielleicht kommen mit dem nächsten Update ja neue Cards!", buttonTitle: "Zum Menü", animalCardImage: nil)
-                    alertVC.modalPresentationStyle = .overFullScreen
-                    alertVC.modalTransitionStyle = .crossDissolve
+                    let alertVC = GWBAlertVC(title: "Heavy Player, ha!", message: "Alle Cards sind schon freigeschaltet. Vielleicht kommen mit dem nächsten Update ja neue Cards!", buttonTitle: "Zum Menü", animalCardImage: nil)
                     alertVC.buttonAction = {
                         self.dismiss(animated: true) {
                         }

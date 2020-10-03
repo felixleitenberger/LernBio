@@ -15,8 +15,15 @@ class MainScreenViewController: UIViewController {
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
+        getLastCard()
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        configureQuizSelectionView()
+        configureLayoutOfCardView()
     }
     
     
@@ -26,12 +33,42 @@ class MainScreenViewController: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
-    @IBAction func learnButtonPressed(_ sender: UIButton) {
-        let alert = GWBAlertVC(title: "Title Title Title", message: "message message message message message message", buttonTitle: "Cool", animalCardImage: UIImage(named: "tamandua_logo"))
-        alert.modalPresentationStyle = .overFullScreen
-        alert.modalTransitionStyle = .crossDissolve
+    @IBOutlet var lastCardImage: UIImageView!
+    @IBOutlet var lastCardName: UILabel!
+    @IBOutlet var cardView: UIView!
+    @IBOutlet var cardStack: UIStackView!
+    @IBOutlet var quizSelectionView: UIView!
+    
+    
+    func getLastCard() {
+        let cards = AnimalCard.getUnlockedAnimalCards()
         
-        present(alert, animated: true, completion: nil)
+        if let lastCard = cards.last {
+            cardView.isHidden = false
+            lastCardImage.image = UIImage(named: lastCard.imageLogo)
+            lastCardName.text = lastCard.name
+        } else {
+            cardView.isHidden = true
+        }
+    }
+    
+    
+    func configureLayoutOfCardView() {
+        cardStack.layer.cornerRadius = 10
+        
+        cardView.layer.cornerRadius = 20
+        cardView.layer.shadowPath = UIBezierPath(roundedRect: cardView.bounds, cornerRadius: 20).cgPath
+        cardView.layer.shadowColor = UIColor.label.cgColor
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.shadowOffset = .zero
+    }
+    
+    func configureQuizSelectionView() {
+        quizSelectionView.layer.cornerRadius = 20
+        quizSelectionView.layer.shadowPath = UIBezierPath(roundedRect: quizSelectionView.bounds, cornerRadius: 20).cgPath
+        quizSelectionView.layer.shadowColor = UIColor.label.cgColor
+        quizSelectionView.layer.shadowOpacity = 0.5
+        quizSelectionView.layer.shadowOffset = .zero
     }
 }
 

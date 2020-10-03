@@ -70,10 +70,11 @@ class AnimalCardDetailViewController: UIViewController {
 
             let factLabel = UILabel(frame: scrollViewFrame)
             factLabel.numberOfLines = 0
-            factLabel.font = UIFont.systemFont(ofSize: 30)
+            factLabel.font = UIFont.preferredFont(forTextStyle: .body)
+            factLabel.adjustsFontForContentSizeCategory = true
             factLabel.textColor = .systemGray
-            factLabel.minimumScaleFactor = 0.5
             factLabel.adjustsFontSizeToFitWidth = true
+            factLabel.minimumScaleFactor = 0.3
             factLabel.textAlignment = .left
             factLabel.text = animalFacts[index]
 

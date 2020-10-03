@@ -57,8 +57,6 @@ struct AnimalCard: Codable {
         if getAllAnimalCards().count > unlockedAnimalCardsIndices.count {
             unlockedAnimalCardsIndices.append(unlockedAnimalCardsIndices.count)
             defaults.set(unlockedAnimalCardsIndices, forKey: "UnlockedAnimalCards")
-        } else {
-            print("Can't add any more! \(unlockedAnimalCardsIndices.count)")
         }
     }
     
