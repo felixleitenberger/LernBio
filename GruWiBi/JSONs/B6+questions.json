@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Wähle den Bestandteil des Pflanzenkörpers aus, der die Mineralsalze und Wasser aus dem Boden aufnimmt.",
+    "correctAnswer": "die Wurzel",
+    "wrongAnswer1": "der Stängel",
+    "wrongAnswer2": "das Laubblatt",
+    "wrongAnswer3": "der Sproß",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den Bestandteil des Pflanzenkörpers aus, der Traubenzucker bilden kann.",
+    "correctAnswer": "das Laubblatt",
+    "wrongAnswer1": "der Stängel",
+    "wrongAnswer2": "die Wurzel",
+    "wrongAnswer3": "die Blüte",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den Bestandteil des Pflanzenkörpers aus, der zur Fortpflanzung dient.",
+    "correctAnswer": "die Blüte",
+    "wrongAnswer1": "das Laubblatt",
+    "wrongAnswer2": "der Stängel",
+    "wrongAnswer3": "die Wurzel",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Aufgabe der Blüte aus.",
+    "correctAnswer": "Fortpflanzung",
+    "wrongAnswer1": "Hübsch aussehen",
+    "wrongAnswer2": "Traubenzucker herstellen",
+    "wrongAnswer3": "Nahrung für Tiere",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die korrekte Definition für den Begriff Bestäubung aus.",
+    "correctAnswer": "Übertragung des Pollens auf die Narbe durch Tiere oder den Wind.",
+    "wrongAnswer1": "Verschmelzung von Ei- und Spermienzelle",
+    "wrongAnswer2": "Entstehung einer Frucht.",
+    "wrongAnswer3": "Verbreitung des Samens.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die korrekte Definition für den Begriff Befruchtung aus.",
+    "correctAnswer": "Der Kern der Spermienzelle eines Pollenkorns verschmilzt mit dem Kern der Eizelle.",
+    "wrongAnswer1": "Zwei Pollenkörner verschmelzen miteinander.",
+    "wrongAnswer2": "Samen werden auf eine andere Blüte übertragen.",
+    "wrongAnswer3": "Die Frucht bildet einen Sproß aus, der langsam wächst.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den korrekten Begriff für eine befruchtete Eizelle aus.",
+    "correctAnswer": "die Zygote",
+    "wrongAnswer1": "der Embryo",
+    "wrongAnswer2": "die Frucht",
+    "wrongAnswer3": "der Samen",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den Teil der Blüte aus, aus dem die Frucht entsteht.",
+    "correctAnswer": "der Fruchtknoten",
+    "wrongAnswer1": "der Samen",
+    "wrongAnswer2": "das Kronblatt",
+    "wrongAnswer3": "die Samenanlage",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Frucht aus, die nur einen Samen enthält",
+    "correctAnswer": "die Kirsche",
+    "wrongAnswer1": "die Himbeere",
+    "wrongAnswer2": "die Weintraube",
+    "wrongAnswer3": "der Apfel",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Aufgabe des Nährgewebes im Samen aus",
+    "correctAnswer": "Nährstoffe für den Embryo",
+    "wrongAnswer1": "Nährstoffe für Tiere",
+    "wrongAnswer2": "Nährstoffe für Menschen",
+    "wrongAnswer3": "Schutz des Embryos",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den Vorgang aus, durch den der Keimling die im Samen gespeicherten Nährstoffe in Energie umwandelt.",
+    "correctAnswer": "die Zellatmung",
+    "wrongAnswer1": "die Fotosynthese",
+    "wrongAnswer2": "die Bestäubung",
+    "wrongAnswer3": "die Befruchtung",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Bei der ungeschlechtlichen Vermehrung von Pflanzen entstehen nur gleiche Nachkommen. Wähle den Fachbegriff dafür aus.",
+    "correctAnswer": "der Klon",
+    "wrongAnswer1": "die Bionik",
+    "wrongAnswer2": "der Embryo",
+    "wrongAnswer3": "der Keimling",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den Ort der Fotosynthese aus.",
+    "correctAnswer": "der Chloroplast",
+    "wrongAnswer1": "der Zellkern",
+    "wrongAnswer2": "das Zellplasma",
+    "wrongAnswer3": "die Zellmembran",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die korrekte Energie-Umwandlung aus, die bei der Fotosynthese stattfindet.",
+    "correctAnswer": "Lichtenergie des Sonnenlichts wird zu chemische Energie des Traubenzuckers",
+    "wrongAnswer1": "Chemische Energie des Traubenzuckers wird zu Zell-Energie",
+    "wrongAnswer2": "Lichtenergie wird zu Zell-Energie",
+    "wrongAnswer3": "Kohlenstoffdioxid + Wasser —> Traubenzucker + Sauerstoff",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die korrekte Stoff-Umwandlung aus, die bei der Fotosynthese stattfindet.",
+    "correctAnswer": "Kohlenstoffdioxid + Wasser —> Traubenzucker + Sauerstoff",
+    "wrongAnswer1": "Kohlenstoff + Wasser —> Traubenzucker + Sauerstoff",
+    "wrongAnswer2": "Kohlenstoffdioxid + Wasserstoff —> Traubenzucker + Sauerstoff",
+    "wrongAnswer3": "Kohlenstoffdioxid + Sauerstoff —> Traubenzucker + Wasser",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle aus, welcher Stoff als Speicherstoff im Laubblatt gebildet wird.",
+    "correctAnswer": "die Stärke",
+    "wrongAnswer1": "das Fett",
+    "wrongAnswer2": "das Protein",
+    "wrongAnswer3": "der Sauerstoff",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Ähnliche Pflanzengattungen werden in der Systematik zusammengefasst. Wähle den korrekten Begriff dafür aus.",
+    "correctAnswer": "die Pflanzenfamilie",
+    "wrongAnswer1": "die Pflanzenspezies",
+    "wrongAnswer2": "die Pflanzenordnung",
+    "wrongAnswer3": "der Pflanzenstamm",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle aus, was für die Keimung eines Samens nicht benötigt wird.",
+    "correctAnswer": "das Licht",
+    "wrongAnswer1": "die Feuchtigkeit",
+    "wrongAnswer2": "die Wärme",
+    "wrongAnswer3": "der Sauerstoff",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tierklasse aus, deren Mitglieder normalerweise keine Lunge besitzen.",
+    "correctAnswer": "die Fische",
+    "wrongAnswer1": "die Säugetiere",
+    "wrongAnswer2": "die Reptilien",
+    "wrongAnswer3": "die Vögel",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tierklasse aus, zu der das Merkmal „besonders leichtes Skelett“ am besten passt.",
+    "correctAnswer": "die Vögel",
+    "wrongAnswer1": "die Fische",
+    "wrongAnswer2": "die Reptilien",
+    "wrongAnswer3": "die Amphibien",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tierklasse aus, die nicht zum Stamm der Wirbeltiere gehört.",
+    "correctAnswer": "die Schnecken",
+    "wrongAnswer1": "die Amphibien",
+    "wrongAnswer2": "die Reptilien",
+    "wrongAnswer3": "die Fische",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tierklasse aus, die nicht zum Stamm der Wirbeltiere gehört.",
+    "correctAnswer": "die Spinnen",
+    "wrongAnswer1": "die Säugetiere",
+    "wrongAnswer2": "die Reptilien",
+    "wrongAnswer3": "die Vögel",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tierklasse aus, deren Mitglieder keine Zähne besitzen.",
+    "correctAnswer": "die Vögel",
+    "wrongAnswer1": "die Fische",
+    "wrongAnswer2": "die Säugetiere",
+    "wrongAnswer3": "die Reptilien",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle das Merkwort aus, mit dem man sich die biologische Systematik einprägen kann.",
+    "correctAnswer": "SKOFGA",
+    "wrongAnswer1": "GAFOKS",
+    "wrongAnswer2": "SOGAFK",
+    "wrongAnswer3": "SKOGAD",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle eine sinnvolle Übersetzung für den Begriff Metamorphose aus.",
+    "correctAnswer": "der Gestaltwandel",
+    "wrongAnswer1": "die Verzauberung",
+    "wrongAnswer2": "die Weiterentwicklung",
+    "wrongAnswer3": "die Körpertemperatur",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Definition für den Begriff wechselwarm aus.",
+    "correctAnswer": "Die Körpertemperatur ändert sich mit der Umgebungstemperatur.",
+    "wrongAnswer1": "Die Umgebungstemperatur ändert sich mit der Körpertemperatur.",
+    "wrongAnswer2": "Die Körpertemperatur bleibt konstant.",
+    "wrongAnswer3": "Die Körpertemperatur ist immer doppelt so hoch wie die Umgebungstemperatur.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Atmungs-Strategie der meisten Fische aus.",
+    "correctAnswer": "die Kiemenatmung",
+    "wrongAnswer1": "die Mundhöhlenatmung",
+    "wrongAnswer2": "die Lungenatmung",
+    "wrongAnswer3": "die Hautatmung",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle einen Unterschied aus, der Amphibien von Reptilien unterscheidet.",
+    "correctAnswer": "Die Eier besitzen keine Schale.",
+    "wrongAnswer1": "Die Beine können sich weniger gut bewegen.",
+    "wrongAnswer2": "Die Körpertemperatur ist wechselwarm.",
+    "wrongAnswer3": "Sie besitzen eine Wirbelsäule.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tierklasse aus, wo es keine innere Befruchtung gibt.",
+    "correctAnswer": "die Fische",
+    "wrongAnswer1": "die Reptilien",
+    "wrongAnswer2": "die Vögel",
+    "wrongAnswer3": "die Säugetiere",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Du findest ein Tier mit trockener, schuppiger Haut. Wähle aus, zu welcher Tierklasse es gehört.",
+    "correctAnswer": "die Reptilien",
+    "wrongAnswer1": "die Fische",
+    "wrongAnswer2": "die Amphibien",
+    "wrongAnswer3": "die Säugetiere",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Du findest ein Tier mit Flossen und stromlinienförmigem Körper. Wähle aus, zu welcher Tierklasse es gehört.",
+    "correctAnswer": "die Fische",
+    "wrongAnswer1": "die Reptilien",
+    "wrongAnswer2": "die Amphibien",
+    "wrongAnswer3": "die Säugetiere",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Du findest ein Tier mit Kiemenatmung als Larve, welches kein Fisch ist. Wähle aus, zu welcher Tierklasse es gehört.",
+    "correctAnswer": "die Amphibien",
+    "wrongAnswer1": "die Reptilien",
+    "wrongAnswer2": "die Säugetiere",
+    "wrongAnswer3": "die Vögel",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Ähnliche Arten gehören zur gleichen…",
+    "correctAnswer": "Gattung",
+    "wrongAnswer1": "Familie",
+    "wrongAnswer2": "Ordnung",
+    "wrongAnswer3": "Klasse",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Ähnliche Gattungen gehören zur gleichen…",
+    "correctAnswer": "Familie",
+    "wrongAnswer1": "Art",
+    "wrongAnswer2": "Gattung",
+    "wrongAnswer3": "Ordnung",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Ähnliche Familien gehören zur gleichen…",
+    "correctAnswer": "Ordnung",
+    "wrongAnswer1": "Art",
+    "wrongAnswer2": "Gattung",
+    "wrongAnswer3": "Klasse",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Ähnliche Ordnungen gehören zur gleichen…",
+    "correctAnswer": "Klasse",
+    "wrongAnswer1": "Familie",
+    "wrongAnswer2": "Gattung",
+    "wrongAnswer3": "Art",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Ähnliche Klassen gehören zum gleichen…",
+    "correctAnswer": "Stamm",
+    "wrongAnswer1": "Ordnungsfeld",
+    "wrongAnswer2": "Lebensraum",
+    "wrongAnswer3": "Oberbegriff",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Alle Lebewesen mit Wirbelsäule gehören…",
+    "correctAnswer": "zum Stamm der Wirbeltiere",
+    "wrongAnswer1": "zur Klasse der Säugetiere",
+    "wrongAnswer2": "zum Reich der Wirbeltiere",
+    "wrongAnswer3": "zum Wirbel-Club",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Du findest ein Ei mit pergamentartiger Schale. Wähle die Tierklasse, die sich vermutlich im Ei befindet.",
+    "correctAnswer": "ein Reptil",
+    "wrongAnswer1": "ein Amphibium",
+    "wrongAnswer2": "ein Vogel",
+    "wrongAnswer3": "ein Fisch",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die richtige Definition für den Begriff gleichwarm aus.",
+    "correctAnswer": "Die Körpertemperatur wird immer auf dem gleichen Wert gehalten.",
+    "wrongAnswer1": "Die Körpertemperatur sinkt im Laufe des Tages.",
+    "wrongAnswer2": "Die Körpertemperatur ist so warm wie die Umgebung.",
+    "wrongAnswer3": "Die Körpertemperatur wird vom Gehirn gesteuert.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Bestandteile der Wirbelsäule aus.",
+    "correctAnswer": "Wirbelknochen und Bandscheiben",
+    "wrongAnswer1": "Wirbelknorpel und Bandscheiben",
+    "wrongAnswer2": "Wirbelkalk und Wirbelknorpel",
+    "wrongAnswer3": "Wirbelscheiben und Bandknochen",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Fische besitzen einen stromlinienförmigen Körper. Wähle den evolutionären Grund aus.",
+    "correctAnswer": "Für einen geringen Strömungswiderstand im Wasser",
+    "wrongAnswer1": "Für Auftrieb im Wasser",
+    "wrongAnswer2": "Um cool auszusehen",
+    "wrongAnswer3": "Zur Oberflächenvergrößerung",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Amphibien besitzen eine feuchte Haut. Wähle den evolutionären Grund aus.",
+    "correctAnswer": "Um Sauerstoff über die Haut aufnehmen zu können.",
+    "wrongAnswer1": "Um glitschig zu sein und Feinden zu entkommen.",
+    "wrongAnswer2": "Um sich vor Austrocknung zu schützen.",
+    "wrongAnswer3": "Um nicht mit Reptilien verwechselt zu werden.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Reptilien besitzen eine trockene, schuppige Haut. Wähle den evolutionären Grund aus.",
+    "correctAnswer": "Um auch in trockenen Gebieten leben zu können.",
+    "wrongAnswer1": "Sie finden glitschige Haut eklig.",
+    "wrongAnswer2": "Sie wollen nicht mit Amphibien verwechselt werden.",
+    "wrongAnswer3": "Dass der Schmutz nicht kleben bleibt.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Vögel haben sehr unterschiedliche Schnäbel. Wähle den evolutionären Grund aus.",
+    "correctAnswer": "Sie sind an verschiedene Nahrungsquellen angepasst.",
+    "wrongAnswer1": "Sie können sich so von anderen Arten abgrenzen.",
+    "wrongAnswer2": "Sie verhindern so die Fortpflanzung mit anderen Arten.",
+    "wrongAnswer3": "Die Schnäbel sind an die Form der Federn angepasst.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Viele Vögel haben einen charakteristischen Gesang. Wähle den evolutionären Grund aus.",
+    "correctAnswer": "Der Gesang dient der Partnersuche und warnt vor Gefahren.",
+    "wrongAnswer1": "Der Gesang erfreut die Menschen und diese sind dafür freundlicher gegenüber den Vögeln.",
+    "wrongAnswer2": "Der Gesang soll Nahrung anlocken, z.B. Insekten.",
+    "wrongAnswer3": "Der Gesang hat keinen besonderen Zweck.",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle den Fachbegriff dafür aus, wenn die Larve völlig anders aussieht als das erwachsene Tier.",
+    "correctAnswer": "die Metamorphose",
+    "wrongAnswer1": "die Photosynthese",
+    "wrongAnswer2": "das Mitochondrium",
+    "wrongAnswer3": "die Tomographie",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Die Federn der Vögel haben verschiedene Aufgaben. Wähle die aus, die sicher nicht dazu gehört.",
+    "correctAnswer": "Nahrungsbeschaffung",
+    "wrongAnswer1": "Anlocken von Partnern",
+    "wrongAnswer2": "Wärmeisolation",
+    "wrongAnswer3": "Fliegen",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Fische atmen im Wasser. Wähle das passende Atmungsorgan aus.",
+    "correctAnswer": "die Kiemen",
+    "wrongAnswer1": "die Lunge",
+    "wrongAnswer2": "die Haut",
+    "wrongAnswer3": "die Flossen",
+    "imageQuestion": "",
+    
+  },
+  {
+    "question": "Wähle die Tiergruppe aus, die nicht zu den Reptilien gehört.",
+    "correctAnswer": "die Kröten",
+    "wrongAnswer1": "die Schlangen",
+    "wrongAnswer2": "die Echsen",
+    "wrongAnswer3": "die Schildkröten",
+    "imageQuestion": "",
+    
+  }
+]

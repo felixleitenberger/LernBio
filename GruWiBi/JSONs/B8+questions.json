@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Nervenzelle aus.",
+    "correctAnswer": "die Dendriten",
+    "wrongAnswer1": "das Soma",
+    "wrongAnswer2": "die Synapse",
+    "wrongAnswer3": "die Hüllzellen",
+    "imageQuestion": "dendrit"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Nervenzelle aus.",
+    "correctAnswer": "der Zellkern",
+    "wrongAnswer1": "das Soma",
+    "wrongAnswer2": "das Axon",
+    "wrongAnswer3": "der Dendrit",
+    "imageQuestion": "zellkern"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Nervenzelle aus.",
+    "correctAnswer": "das Axon",
+    "wrongAnswer1": "der Dendrit",
+    "wrongAnswer2": "die Synapsen",
+    "wrongAnswer3": "der Zellkern",
+    "imageQuestion": "axon"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Nervenzelle aus.",
+    "correctAnswer": "die Axonverzweigung",
+    "wrongAnswer1": "der Dendrit",
+    "wrongAnswer2": "der Zellkern",
+    "wrongAnswer3": "die Präditis",
+    "imageQuestion": "axonverzweigung"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Nervenzelle aus.",
+    "correctAnswer": "das Soma",
+    "wrongAnswer1": "das Axon",
+    "wrongAnswer2": "die Synapse",
+    "wrongAnswer3": "die Axonverzweigung",
+    "imageQuestion": "soma"
+  },
+  {
+    "question": "Wähle die Aufgabe des rot markierten Teiles der Nervenzelle aus.",
+    "correctAnswer": "empfängt Signale",
+    "wrongAnswer1": "versendet Signale",
+    "wrongAnswer2": "verrechnet Signale",
+    "wrongAnswer3": "blockiert Signale",
+    "imageQuestion": "dendrit"
+  },
+  {
+    "question": "Wähle die Aufgabe des rot markierten Teiles der Nervenzelle aus.",
+    "correctAnswer": "verrechnet Signale",
+    "wrongAnswer1": "empfängt Signale",
+    "wrongAnswer2": "versendet Signale",
+    "wrongAnswer3": "blockiert Signale",
+    "imageQuestion": "soma"
+  },
+  {
+    "question": "Wähle die Aufgabe des rot markierten Teiles der Nervenzelle aus.",
+    "correctAnswer": "leitet Signale weiter",
+    "wrongAnswer1": "verrechnet Signale",
+    "wrongAnswer2": "blockiert Signale",
+    "wrongAnswer3": "verändert Signale",
+    "imageQuestion": "axon"
+  },
+  {
+    "question": "Die Grundeinheit des Nervensystems heißt…",
+    "correctAnswer": "die Nervenzelle",
+    "wrongAnswer1": "die Ader",
+    "wrongAnswer2": "die Blutzelle",
+    "wrongAnswer3": "die Signalzelle",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den passenden Begriff für diese Abbildung aus.",
+    "correctAnswer": "die Reiz-Reaktions-Kette",
+    "wrongAnswer1": "die Blut-Hirn-Schranke",
+    "wrongAnswer2": "das Neuron",
+    "wrongAnswer3": "die Nervenbahn",
+    "imageQuestion": "RRKette_komplett"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Reiz-Reaktions-Kette aus.",
+    "correctAnswer": "der afferente Nerv",
+    "wrongAnswer1": "der efferente Nerv",
+    "wrongAnswer2": "der intransparente Nerv",
+    "wrongAnswer3": "der effiziente Nerv",
+    "imageQuestion": "RRKette_afferent"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Reiz-Reaktions-Kette aus.",
+    "correctAnswer": "der efferente Nerv",
+    "wrongAnswer1": "der afferente Nerv",
+    "wrongAnswer2": "der äfferente Nerv",
+    "wrongAnswer3": "der stringente Nerv",
+    "imageQuestion": "RRKette_efferent"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Reiz-Reaktions-Kette aus.",
+    "correctAnswer": "der Effektor",
+    "wrongAnswer1": "der Nerv",
+    "wrongAnswer2": "der Rezeptor",
+    "wrongAnswer3": "der Dendrit",
+    "imageQuestion": "RRKette_Effektor"
+  },
+  {
+    "question": "Wähle den Begriff für den rot markierten Teil der Reiz-Reaktions-Kette aus.",
+    "correctAnswer": "das Sinnesorgan",
+    "wrongAnswer1": "die Antenne",
+    "wrongAnswer2": "das Axon",
+    "wrongAnswer3": "der Dendrit",
+    "imageQuestion": "RRKette_Sinnesorgan"
+  },
+  {
+    "question": "Wähle die Beschreibung für die allgemeine Funktion eines Sinnesorgans aus.",
+    "correctAnswer": "Aufnahme von Reizen",
+    "wrongAnswer1": "Aufnahme von Informationen",
+    "wrongAnswer2": "Aufnahme von Signalen",
+    "wrongAnswer3": "Verarbeitung von Signalen",
+    "imageQuestion": "RRKette_ohne"
+  },
+  {
+    "question": "Wähle die Funktion des Gehirns aus.",
+    "correctAnswer": "Verarbeitung der Information",
+    "wrongAnswer1": "Verarbeitung des Reizes",
+    "wrongAnswer2": "afferente Arbeit",
+    "wrongAnswer3": "Umwandlung des Reizes",
+    "imageQuestion": "RRKette_ohne"
+  },
+  {
+    "question": "Beschreibe die Funktion des Effektors.",
+    "correctAnswer": "Reaktion auf den Reiz",
+    "wrongAnswer1": "Verarbeitung des Reizes",
+    "wrongAnswer2": "Verarbeitung von Informationen",
+    "wrongAnswer3": "Weiterleitung der Reaktion",
+    "imageQuestion": "RRKette_ohne"
+  },
+  {
+    "question": "Beschreibe die Weiterleitung in Nervenzellen.",
+    "correctAnswer": "elektrisch",
+    "wrongAnswer1": "chemisch",
+    "wrongAnswer2": "akustisch",
+    "wrongAnswer3": "optisch",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Efferente Nerven leiten vom…",
+    "correctAnswer": "Gehirn zum Effektor",
+    "wrongAnswer1": "Gehirn zum Sinnesorgan",
+    "wrongAnswer2": "Effektor zum Gehirn",
+    "wrongAnswer3": "Sinnesorgan zum Effektor",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Afferente Nerven leiten vom …",
+    "correctAnswer": "Sinnesorgan zum Gehirn",
+    "wrongAnswer1": "Sinnesorgan zum Effektor",
+    "wrongAnswer2": "Effektor zum Gehirn",
+    "wrongAnswer3": "Gehirn zum Sinnesorgan",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Benenne die Kontaktstelle zwischen einer Nervenzelle und einer Effektorzelle.",
+    "correctAnswer": "die Synapse",
+    "wrongAnswer1": "die Effektapse",
+    "wrongAnswer2": "das Neuron",
+    "wrongAnswer3": "der Dendrit",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Benenne die Kontaktstelle zwischen einer Nervenzelle und einer Nervenzelle.",
+    "correctAnswer": "die Synapse",
+    "wrongAnswer1": "die Effektapse",
+    "wrongAnswer2": "das Neuron",
+    "wrongAnswer3": "der Dendrit",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Begriff für den chemischen Stoff, der bei der Synapse verwendet wird.",
+    "correctAnswer": "der Transmitter",
+    "wrongAnswer1": "das Kohlenhydrat",
+    "wrongAnswer2": "die Aminosäure",
+    "wrongAnswer3": "das Methadon",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Beschreibe die Weiterleitung an einer Synapse",
+    "correctAnswer": "chemisch",
+    "wrongAnswer1": "elektrisch",
+    "wrongAnswer2": "akustisch",
+    "wrongAnswer3": "optisch",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Du siehst einen Hund. Nenne den Ort der Wahrnehmung.",
+    "correctAnswer": "das Gehirn",
+    "wrongAnswer1": "das Auge",
+    "wrongAnswer2": "das Neuron",
+    "wrongAnswer3": "die Sinneszelle",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die passende Sinneszelle für den Reiz Lichtwelle aus.",
+    "correctAnswer": "das Stäbchen/der Zapfen",
+    "wrongAnswer1": "das Auge",
+    "wrongAnswer2": "die Netzhaut",
+    "wrongAnswer3": "die Linse",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die passende Sinneszelle für den Reiz Schallwelle aus.",
+    "correctAnswer": "die Haarzelle",
+    "wrongAnswer1": "das Trommelfell",
+    "wrongAnswer2": "das Ohr",
+    "wrongAnswer3": "das runde Fenster",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die passende Sinneszelle für den Reiz saurer Geschmack aus.",
+    "correctAnswer": "die Geschmacksknospe",
+    "wrongAnswer1": "die Zunge",
+    "wrongAnswer2": "der Zungenmuskel",
+    "wrongAnswer3": "die Haut",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Definition für den Begriff Hormon aus.",
+    "correctAnswer": "ein chemischer Botenstoff",
+    "wrongAnswer1": "ein Nervensignal",
+    "wrongAnswer2": "ein elektrisches Signal",
+    "wrongAnswer3": "eine Reizung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Zwei Moleküle, die sich räumlich ergänzen kommen in der Biologie häufig vor. Wähle den korrekten Fachbegriff dafür aus.",
+    "correctAnswer": "das Schlüssel-Schloss-Modell",
+    "wrongAnswer1": "das Puzzle-Modell",
+    "wrongAnswer2": "das Stift-Stab-Modell",
+    "wrongAnswer3": "das Passt-Genau-Modell",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Eigenschaft aus, die nicht zum Reflex passt.",
+    "correctAnswer": "Die Entscheidung erfolgt im Großhirn.",
+    "wrongAnswer1": "Dient dem Schutz des Körpers.",
+    "wrongAnswer2": "Wird direkt ausgelöst.",
+    "wrongAnswer3": "Läuft nach festem Schema ab.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Dehnt man die Kniesehne, schnellt der Fuß nach vorne. Wähle den passenden Begriff für diese Reaktion aus.",
+    "correctAnswer": "der Reflex",
+    "wrongAnswer1": "die Prägung",
+    "wrongAnswer2": "die Konditionierung",
+    "wrongAnswer3": "die Attrappe",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle eine Möglichkeit aus, um herauszufinden, ob ein Verhalten genetisch bedingt ist.",
+    "correctAnswer": "das Kaspar-Hauser-Experiment",
+    "wrongAnswer1": "der Attrappenversuch",
+    "wrongAnswer2": "die Kalkwasser-Probe",
+    "wrongAnswer3": "der Reflex-Hammer",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Definition für Prägung aus.",
+    "correctAnswer": "Ein Lernvorgang, der nur in einer kurzen sensiblen Phase möglich ist.",
+    "wrongAnswer1": "Ein Lernvorgang, der nur von einer bestimmten Person durchgeführt werden kann.",
+    "wrongAnswer2": "Ein angeborenes Verhalten.",
+    "wrongAnswer3": "Ein Verhalten im Bereich der Bewegung.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Verknüpft man ein Verhalten mit einem neuen Auslöser, spricht man von…",
+    "correctAnswer": "klassischer Konditionierung",
+    "wrongAnswer1": "operabler Konditionierung",
+    "wrongAnswer2": "operanter Konditionierung",
+    "wrongAnswer3": "klassifizierter Konditionierung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Erlernt man ein neues Verhaltensmuster durch Konsequenz (Belohnung oder Strafe) auf dieses Verhalten, spricht man von…",
+    "correctAnswer": "operanter Konditionierung",
+    "wrongAnswer1": "operabler Konditionierung",
+    "wrongAnswer2": "klassischer Konditionierung",
+    "wrongAnswer3": "klassifizierter Konditionierung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Definition für den Begriff Sukzession aus.",
+    "correctAnswer": "Erscheinen neuer Pflanzen- und Tierarten nach Störung des Ökosystems.",
+    "wrongAnswer1": "Entstehen einer neuen Generation bei allen Pflanzen- und Tierarten",
+    "wrongAnswer2": "Aussterben der meisten Pflanzen- und Tierarten.",
+    "wrongAnswer3": "Umweltverschmutzung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Beschreibung, die den Begriff Attrappe am besten beschreibt.",
+    "correctAnswer": "Sie enthält einen oder eine Kombination von auslösenden Reizen.",
+    "wrongAnswer1": "Sie bildet das Original möglichst gut ab.",
+    "wrongAnswer2": "Sie ist ein willkürlich zusammengestelltes Objekt.",
+    "wrongAnswer3": "Sie ist meist schwarz oder weiß.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Zur Regulation des Blutzuckers werden zwei Gegenspieler-Hormone verwendet. Wähle das korrekte Paar aus.",
+    "correctAnswer": "Insulin und Glucagon",
+    "wrongAnswer1": "Insulin und Glykogen",
+    "wrongAnswer2": "Glykogen und Glucose",
+    "wrongAnswer3": "Glykogen und Glucosamin",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Namen der Krankheit aus, bei der die Regulation des Blutzuckerspiegels gestört ist.",
+    "correctAnswer": "Diabetes",
+    "wrongAnswer1": "Diabolo",
+    "wrongAnswer2": "Diabeete",
+    "wrongAnswer3": "Dubeete",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Namen für die Phase zwischen Kind- und Erwachsenenalter beim Menschen.",
+    "correctAnswer": "die Pubertät",
+    "wrongAnswer1": "die Östrogene",
+    "wrongAnswer2": "die Menstruation",
+    "wrongAnswer3": "das Progesteron",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle das Verhütungsmittel aus, das auch vor HI-Viren schützt.",
+    "correctAnswer": "das Kondom",
+    "wrongAnswer1": "die Pille",
+    "wrongAnswer2": "die Spirale",
+    "wrongAnswer3": "die Temperatur-Methode",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Langversion für HIV aus.",
+    "correctAnswer": "Humanes Immundefizienz-Virus",
+    "wrongAnswer1": "Humanes Igolomänien-Virus",
+    "wrongAnswer2": "Humanes Immun-Antwort",
+    "wrongAnswer3": "Hell-Inferno-Virus",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Ob eine Erbkoordination stattfindet hängt von zwei Faktoren ab. Wähle diese aus.",
+    "correctAnswer": "innere Handlungsbereitschaft und Reizqualität",
+    "wrongAnswer1": "Geruch und Geschmack",
+    "wrongAnswer2": "Prägung und Erfolg",
+    "wrongAnswer3": "Operant und klassisch",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle das Tier aus, mit dem Igor Pawlow experimentierte.",
+    "correctAnswer": "der Hund",
+    "wrongAnswer1": "die Katze",
+    "wrongAnswer2": "der Hamster",
+    "wrongAnswer3": "der Hase",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Begriff für das Gewebe, das den Embryo mit Nährstoffen versorgt.",
+    "correctAnswer": "die Plazenta",
+    "wrongAnswer1": "die Gebärmutter",
+    "wrongAnswer2": "der Eierstock",
+    "wrongAnswer3": "die Folsäure",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Erfolgt keine Befruchtung, werden die oberen Schichten der Gebärmutterschleimhaut abgebaut. Wähle den Begriff dafür.",
+    "correctAnswer": "die Menstruation",
+    "wrongAnswer1": "die Verhütung",
+    "wrongAnswer2": "die Pubertät",
+    "wrongAnswer3": "der Eisprung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle das Stress-Hormon aus.",
+    "correctAnswer": "das Adrenalin",
+    "wrongAnswer1": "das Insulin",
+    "wrongAnswer2": "das Dopamin",
+    "wrongAnswer3": "das Luthein",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Sinneszellen aus, die für den Hörvorgang zuständig sind.",
+    "correctAnswer": "die Haarzellen",
+    "wrongAnswer1": "die Stäbchen",
+    "wrongAnswer2": "die Zapfen",
+    "wrongAnswer3": "die Druckkörperchen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Zelltyp der Gehirnzellen aus.",
+    "correctAnswer": "die Nervenzelle",
+    "wrongAnswer1": "die Muskelzelle",
+    "wrongAnswer2": "die Drüsenzelle",
+    "wrongAnswer3": "die Synapse",
+    "imageQuestion": ""
+  }
+]

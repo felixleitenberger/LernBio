@@ -1,0 +1,410 @@
+[
+  {
+    "question": "Das Wort Biologie bedeutet…",
+    "correctAnswer": "die Lehre von den Lebewesen",
+    "wrongAnswer1": "umweltbewusstes Leben",
+    "wrongAnswer2": "organischer Abfall",
+    "wrongAnswer3": "die Lehre von den Tieren",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die korrekte Aussage aus.",
+    "correctAnswer": "Jedes Lebewesen betreibt Stoffwechsel",
+    "wrongAnswer1": "Jedes Lebewesen besitzt eine Lunge",
+    "wrongAnswer2": "Jedes Lebewesen hat Beine",
+    "wrongAnswer3": "Jedes Lebewesen kann sehen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Vorgang aus, der nicht zum Stoffwechsel passt.",
+    "correctAnswer": "Stoffvermehrung",
+    "wrongAnswer1": "Stoffaufnahme",
+    "wrongAnswer2": "Stoffabgabe",
+    "wrongAnswer3": "Stoffumwandlung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Lebewesen reagieren auf Reize aus ihrer Umwelt. Wähle die sinnvolle Abfolge aus.",
+    "correctAnswer": "Informationsaufnahme, Informationsverarbeitung, Reaktion",
+    "wrongAnswer1": "Reaktion, Informationsaufnahme, Informationsverarbeitung",
+    "wrongAnswer2": "Informationsverarbeitung, Informationsaufnahme, Reaktion",
+    "wrongAnswer3": "Informationsverarbeitung, Reaktion, Informationsaufnahme",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Zellbestandteil aus, der in einer Tierzelle nicht vorkommt.",
+    "correctAnswer": "die Vakuole",
+    "wrongAnswer1": "die Zellmembran",
+    "wrongAnswer2": "das Zellplasma",
+    "wrongAnswer3": "der Zellkern",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Zellbestandteil aus, der in einer Tierzelle nicht vorkommt.",
+    "correctAnswer": "der Chloroplast",
+    "wrongAnswer1": "die Zellmembran",
+    "wrongAnswer2": "das Zellplasma",
+    "wrongAnswer3": "der Zellkern",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Zellbestandteil aus, der in einer Tierzelle nicht vorkommt.",
+    "correctAnswer": "die Zellwand",
+    "wrongAnswer1": "die Zellmembran",
+    "wrongAnswer2": "das Zellplasma",
+    "wrongAnswer3": "der Zellkern",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Arm- und Beinskelett bezeichnet man als…",
+    "correctAnswer": "das Gliedmaßenskelett",
+    "wrongAnswer1": "das Schädelskelett",
+    "wrongAnswer2": "das Rumpfskelett",
+    "wrongAnswer3": "das Anhangskelett",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Der Schädel besteht aus…",
+    "correctAnswer": "Knochen",
+    "wrongAnswer1": "Muskeln",
+    "wrongAnswer2": "Nerven",
+    "wrongAnswer3": "Leder",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Namen des markierten Teils des menschlichen Armskeletts aus.",
+    "correctAnswer": "die Elle",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "das Wadenbein",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettElle"
+  },
+  {
+    "question": "Wähle den Namen des markierten Teils des menschlichen Armskeletts aus.",
+    "correctAnswer": "die Speiche",
+    "wrongAnswer1": "die Elle",
+    "wrongAnswer2": "das Schienbein",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettSpeiche"
+  },
+  {
+    "question": "Wähle den Namen des markierten Teils des menschlichen Armskeletts aus.",
+    "correctAnswer": "der Oberarmknochen",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "die Fingerknochen",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettOberarm"
+  },
+  {
+    "question": "Wähle den Namen des markierten Teils des menschlichen Armskeletts aus.",
+    "correctAnswer": "die Handwurzelknochen",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "die Fingerknochen",
+    "wrongAnswer3": "der Oberarmknochen",
+    "imageQuestion": "armskelettHandwurzel"
+  },
+  {
+    "question": "Wähle den Namen des markierten Teils des menschlichen Armskeletts aus.",
+    "correctAnswer": "die Fingerknochen",
+    "wrongAnswer1": "die Speiche",
+    "wrongAnswer2": "der Oberarmknochen",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettFinger"
+  },
+  {
+    "question": "Wähle den Namen des markierten Teils des menschlichen Armskeletts aus.",
+    "correctAnswer": "die Mittelhandknochen",
+    "wrongAnswer1": "die Handmittelknochen",
+    "wrongAnswer2": "die Fingerknochen",
+    "wrongAnswer3": "die Handwurzelknochen",
+    "imageQuestion": "armskelettMittelhand"
+  },
+  {
+    "question": "Der Oberarmknochen entspricht im Beinskelett dem…",
+    "correctAnswer": "Oberschenkelknochen",
+    "wrongAnswer1": "Wadenbein",
+    "wrongAnswer2": "Schienbein",
+    "wrongAnswer3": "Zehenknochen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Begriff, der die Stelle, an der sich zwei Knochen gegeneinander bewegen können, beschreibt.",
+    "correctAnswer": "das Gelenk",
+    "wrongAnswer1": "das Scharnier",
+    "wrongAnswer2": "die Drehstelle",
+    "wrongAnswer3": "die Sehne",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Muskeln können sich selbst…",
+    "correctAnswer": "nur zusammenziehen",
+    "wrongAnswer1": "zusammenziehen und dehnen",
+    "wrongAnswer2": "zusammenziehen, dehnen und drehen",
+    "wrongAnswer3": "nur drehen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Eine „Antenne“, die bestimmte Reize aus der Umwelt aufnimmt, nennt man…",
+    "correctAnswer": "das Sinnesorgan",
+    "wrongAnswer1": "die Wahrnehmung",
+    "wrongAnswer2": "der Sinn",
+    "wrongAnswer3": "der Reiz",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die passendste Beschreibung für den Begriff Nerv aus.",
+    "correctAnswer": "Er leitet Informationen über den Reiz in Form von elektrischen Signalen zum Gehirn.",
+    "wrongAnswer1": "Er leitet den Reiz zum Gehirn.",
+    "wrongAnswer2": "Er leitet den Sinneseindruck ins Gehirn.",
+    "wrongAnswer3": "Er leitet Licht oder Geräusche ins Gehirn.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Ort der Entstehung des Sinneseindrucks aus.",
+    "correctAnswer": "das Gehirn",
+    "wrongAnswer1": "das Sinnesorgan",
+    "wrongAnswer2": "der Nerv",
+    "wrongAnswer3": "die Wahrnehmung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Energie ist sehr wichtig für alle Lebewesen. Wähle die richtige Einheit für die Energiemenge aus.",
+    "correctAnswer": "Kilojoule (kJ)",
+    "wrongAnswer1": "Volt (V)",
+    "wrongAnswer2": "Ampere (A)",
+    "wrongAnswer3": "Kraft (K)",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Wortgleichung der Zellatmung aus.",
+    "correctAnswer": "Traubenzucker + Sauerstoff —> Kohlenstoffdioxid + Wasser",
+    "wrongAnswer1": "Kohlenstoffdioxid + Wasser —> Traubenzucker + Sauerstoff",
+    "wrongAnswer2": "Kohlenstoffdioxid + Sauerstoff —> Wasser + Traubenzucker",
+    "wrongAnswer3": "Traubenzucker + Sauerstoff —> Kohlenstoffdioxid + Wasserstoff",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die falsche Aussage aus.",
+    "correctAnswer": "Bei der Zellatmung wird Zell-Energie neu erzeugt.",
+    "wrongAnswer1": "Energie kann nicht geschaffen und nicht vernichtet werden.",
+    "wrongAnswer2": "Bei der Zellatmung wird die chemische Energie des Traubenzuckers in eine andere Energieform umgewandelt.",
+    "wrongAnswer3": "Zell-Energie ist für jede Zelle lebensnotwendig.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die (Grund-)Nährstoffe aus.",
+    "correctAnswer": "Kohlenhydrate, Fette, Eiweißstoffe",
+    "wrongAnswer1": "Baustoffe, Vitamine, Fette",
+    "wrongAnswer2": "Wasser, Zucker, Proteine",
+    "wrongAnswer3": "Milch, Zucker, Mehl",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die korrekte Reihenfolge der Verdauungs-Stationen aus.",
+    "correctAnswer": "der Mund, die Speiseröhre, der Magen, der Dünndarm, der Dickdarm",
+    "wrongAnswer1": "der Mund, der Magen, die Speiseröhre, der Dünndarm, der Dickdarm",
+    "wrongAnswer2": "der Mund, der Magen, die Speiseröhre, der Dickdarm, der Dünndarm",
+    "wrongAnswer3": "der Mund, die Speiseröhre, der Dünndarm, der Magen, der Dickdarm",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Begriffe, die am besten zum Begriff Oberflächenvergrößerung passen.",
+    "correctAnswer": "Darmfalten, Zotten, Bürstensaum",
+    "wrongAnswer1": "Dünndarm, Dickdarm, Magen",
+    "wrongAnswer2": "Magenschleimhaut, Speiseröhre",
+    "wrongAnswer3": "Darmflora, Mund, Schlucken",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Weg der Luft aus, wenn ein Mensch ausatmet.",
+    "correctAnswer": "Lungenbläschen,  Bronchienäste, Bronchien, Luftröhre, Nase/Mund",
+    "wrongAnswer1": "Mund/Nase, Luftröhre, Bronchien, Bronchienäste, Lungenbläschen",
+    "wrongAnswer2": "Bronchien, Lungenbläschen, Mund/Nase",
+    "wrongAnswer3": "Bronchienäste, Mund/Nase, Luftröhre, Lungenbläschen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Luft ist ein Gemisch aus mehreren Gasen. Wähle das Gas aus, das am meisten enthalten ist.",
+    "correctAnswer": "das Stickstoff-Gas",
+    "wrongAnswer1": "das Sauerstoff-Gas",
+    "wrongAnswer2": "das Helium-Gas",
+    "wrongAnswer3": "das Kohlenstoffdioxid-Gas",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Sauerstoff-Moleküle wandern aus der Luft in das Blut. Wähle den Ort aus, wo das passiert.",
+    "correctAnswer": "die Lungenbläschen",
+    "wrongAnswer1": "die Luftröhre",
+    "wrongAnswer2": "der Magen",
+    "wrongAnswer3": "die Bronchienäste",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle das Gas aus, das in der Aus-Atemluft in höherer Konzentration vorhanden ist als in der Ein-Atemluft.",
+    "correctAnswer": "das Kohlenstoffdioxid-Gas",
+    "wrongAnswer1": "das Sauerstoff-Gas",
+    "wrongAnswer2": "das Stickstoff-Gas",
+    "wrongAnswer3": "das Helium-Gas",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Teil des Blutes aus, der den Sauerstoff zu den Zellen transportiert.",
+    "correctAnswer": "die roten Blutkörperchen",
+    "wrongAnswer1": "die weißen Blutkörperchen",
+    "wrongAnswer2": "das Blutplasma",
+    "wrongAnswer3": "die Blutplättchen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Die weißen Blutkörperchen…",
+    "correctAnswer": "wehren Krankheitserreger ab.",
+    "wrongAnswer1": "transportieren Sauerstoff.",
+    "wrongAnswer2": "transportieren Kohlenstoffdioxid.",
+    "wrongAnswer3": "verschließen Wunden.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Die Blutplättchen…",
+    "correctAnswer": "verschließen Wunden.",
+    "wrongAnswer1": "wehren Krankheitserreger ab.",
+    "wrongAnswer2": "transportieren Sauerstoff.",
+    "wrongAnswer3": "transportieren Kohlenstoffdioxid.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Blut fließt in einem Kreislauf, den man in zwei Abschnitte unterteilt. Wähle diese aus.",
+    "correctAnswer": "Körper- und Lungenkreislauf",
+    "wrongAnswer1": "Rumpf- und Gliedmaßenkreislauf",
+    "wrongAnswer2": "Sauerstoffreicher und sauerstoffarmer Kreislauf",
+    "wrongAnswer3": "Arterien- und Venenkreislauf",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Eine Ader, die das Blut vom Herzen wegführt, nennt man…",
+    "correctAnswer": "die Arterie",
+    "wrongAnswer1": "das Arterie",
+    "wrongAnswer2": "die Vene",
+    "wrongAnswer3": "das Vene",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Eine Ader, die das Blut zum Herzen hinführt, nennt man…",
+    "correctAnswer": "die Vene",
+    "wrongAnswer1": "das Vene",
+    "wrongAnswer2": "die Arterie",
+    "wrongAnswer3": "das Arterie",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Kapillaren sind…",
+    "correctAnswer": "fein verzweigte Blutgefäße.",
+    "wrongAnswer1": "Adern, die das Blut besonders schnell leiten.",
+    "wrongAnswer2": "biologisch gesehen, tot.",
+    "wrongAnswer3": "Lungenbläschen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Biologen haben sich geeinigt sauerstoffreiches Blut in einer bestimmten Farbe zu kennzeichnen. Wähle sie aus.",
+    "correctAnswer": "rot",
+    "wrongAnswer1": "blau",
+    "wrongAnswer2": "grün",
+    "wrongAnswer3": "gelb",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Blut, das vom Herz in die Lunge gepumpt wird, ist…",
+    "correctAnswer": "kohlenstoffdioxidreich und sauerstoffarm",
+    "wrongAnswer1": "kohlenstoffdioxidreich und sauerstoffreich",
+    "wrongAnswer2": "kohlenstoffdioxidarm und sauerstoffarm",
+    "wrongAnswer3": "kohlenstoffdioxidarm und sauerstoffreich",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Der Sauerstoff, der in der Lunge aufgenommen wird, wird verwendet für…",
+    "correctAnswer": "die Zellatmung",
+    "wrongAnswer1": "die Photosynthese",
+    "wrongAnswer2": "die Verdauung",
+    "wrongAnswer3": "die Wasserversorgung",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Typ des Diagramms aus.",
+    "correctAnswer": "das Säulendiagramm",
+    "wrongAnswer1": "das Liniendiagramm",
+    "wrongAnswer2": "das Balkendiagramm",
+    "wrongAnswer3": "das Kuchendiagramm",
+    "imageQuestion": "saeulendiagramm"
+  },
+  {
+    "question": "Wähle die Probe aus, mit der sich Kohlenstoffdioxid-Gas nachweisen lässt.",
+    "correctAnswer": "die Kalkwasser-Probe",
+    "wrongAnswer1": "die Glimmspan-Probe",
+    "wrongAnswer2": "die Iod-Probe",
+    "wrongAnswer3": "die Fettfleck-Probe",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Weißes Licht ist …",
+    "correctAnswer": "ein Gemisch aus vielen unterschiedlich farbigen Lichtsorten.",
+    "wrongAnswer1": "das Gegenteil von schwarzem Licht.",
+    "wrongAnswer2": "eine Mischung aus rotem und grünem Licht.",
+    "wrongAnswer3": "Licht aus dem alle Farben gefiltert wurden.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Lebensraum und Lebensgemeinschaft bilden zusammen…",
+    "correctAnswer": "ein Ökosystem.",
+    "wrongAnswer1": "eine Umwelt.",
+    "wrongAnswer2": "eine Familie.",
+    "wrongAnswer3": "eine biologische Art.",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Definition des Begriffs Bestäubung aus.",
+    "correctAnswer": "Übertragung des Pollens auf die Narbe durch Tiere oder durch den Wind",
+    "wrongAnswer1": "Verschmelzen von Spermienzelle und Eizelle",
+    "wrongAnswer2": "Verbreitung der Samen einer Pflanze",
+    "wrongAnswer3": "Die Entstehung einer neuen Pflanze aus dem Samen",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die korrekte Definition des Begriffs Befruchtung aus.",
+    "correctAnswer": "Der Zellkern der Spermienzelle verschmilzt mit dem Zellkern der Eizelle",
+    "wrongAnswer1": "Übertragung der Spermienzelle bzw. des Pollenkorns",
+    "wrongAnswer2": "Zellteilungen der Zygote",
+    "wrongAnswer3": "Bestäubung durch den Wind",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die Aufgabe eines Laubblattes im Pflanzenkörper aus.",
+    "correctAnswer": "Herstellung von Traubenzucker durch Fotosynthese",
+    "wrongAnswer1": "Erkennungsmerkmal für Tiere",
+    "wrongAnswer2": "Transport von Mineralstoffen in Richtung Boden",
+    "wrongAnswer3": "Anlocken von Insekten und Vögeln",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle den Teil der Blüte, der besonders auffällig bei Blüten ist, die durch Tiere bestäubt werden.",
+    "correctAnswer": "die Kronblätter",
+    "wrongAnswer1": "der Stempel",
+    "wrongAnswer2": "der Fruchtknoten",
+    "wrongAnswer3": "das Laubblatt",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Wähle die korrekte Aussage.",
+    "correctAnswer": "Die Spermien werden in den Hoden des Mannes hergestellt",
+    "wrongAnswer1": "Die Spermien werden in den Eierstöcken des Mannes hergestellt",
+    "wrongAnswer2": "Die Eizellen werden in den Eierstöcken des Mannes hergestellt",
+    "wrongAnswer3": "Die Spermien werden in den Hoden der Frau hergestellt",
+    "imageQuestion": ""
+  },
+  {
+    "question": "Einer dieser Fachbegriffe enthält einen Rechtschreibfehler oder einen falschen Artikel. Wähle ihn aus.",
+    "correctAnswer": "das Knochen",
+    "wrongAnswer1": "der Zellkern",
+    "wrongAnswer2": "das Skelett",
+    "wrongAnswer3": "der Nährstoff",
+    "imageQuestion": ""
+  }
+]
