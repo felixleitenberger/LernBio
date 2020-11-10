@@ -20,8 +20,6 @@ class AnimalCardsViewController: UICollectionViewController, UICollectionViewDel
         self.title = "Deine Cards"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Käufe wiederherstellen", style: .done, target: self, action: #selector(restore))
-        
         let layout = UICollectionViewFlowLayout()
                layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
                layout.minimumLineSpacing = spacing
@@ -60,24 +58,4 @@ class AnimalCardsViewController: UICollectionViewController, UICollectionViewDel
                    return CGSize(width: 0, height: 0)
                }
     }
-    
-    
-    @objc func restore() {
-        switch StoreManager.shared.isAnimalPackUnlocked {
-        case false:
-            StoreManager.shared.restorePurchases { (result) in
-                switch result {
-                case .success(_):
-                    let alert = GWBAlertVC(title: "Kauf wiederhergestellt.", message: "Viel Spaß beim Lernen!", buttonTitle: "Ok", animalCardImage: nil)
-                    self.present(alert, animated: true)
-                case.failure(_):
-                    let alert = GWBAlertVC(title: "Kauf konnte nicht wiederhergestellt werden.", message: "Falls es Probleme gibt, schreib an support@crabucate.de", buttonTitle: "Ok", animalCardImage: nil)
-                    self.present(alert, animated: true)
-                }
-            }
-        case true:
-            let alert = GWBAlertVC(title: "Alles in Ordnung", message: "Du kannst bereits alle AnimalCards freispielen. Falls es Probleme gibt, schreib an support@crabucate.de", buttonTitle: "Ok", animalCardImage: nil)
-            self.present(alert, animated: true)
-        }
-}
 }

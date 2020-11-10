@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC04235F2552A97600277073 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04235E2552A97600277073 /* SettingsViewController.swift */; };
 		DC1151A025489066001739B6 /* B5+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC11519D25489066001739B6 /* B5+questions.json */; };
 		DC1151A125489066001739B6 /* B8+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC11519E25489066001739B6 /* B8+questions.json */; };
 		DC1151A225489066001739B6 /* B6+questions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC11519F25489066001739B6 /* B6+questions.json */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC04235E2552A97600277073 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DC11519D25489066001739B6 /* B5+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "B5+questions.json"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Crabucate/GruWiBio/Questions/B5+questions.json"; sourceTree = "<group>"; };
 		DC11519E25489066001739B6 /* B8+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "B8+questions.json"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Crabucate/GruWiBio/Questions/B8+questions.json"; sourceTree = "<group>"; };
 		DC11519F25489066001739B6 /* B6+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "B6+questions.json"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Crabucate/GruWiBio/Questions/B6+questions.json"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				DC11C758241A743B00CAF432 /* QuizViewController.swift */,
 				DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */,
 				DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */,
+				DC04235E2552A97600277073 /* SettingsViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				DC16320F242B538500536FA5 /* AnimalCardsViewController.swift in Sources */,
 				DC84A8C4252CD97600B5CB0D /* AnimalCardManager.swift in Sources */,
 				DCED1D92244759FB00D80082 /* GWBAlertContainerView.swift in Sources */,
+				DC04235F2552A97600277073 /* SettingsViewController.swift in Sources */,
 				DCED1D9424475AD100D80082 /* GWBButton.swift in Sources */,
 				DC16320B242B515F00536FA5 /* AnimalCard.swift in Sources */,
 				DC6F2DE52449E56900FF3D66 /* GWBBodyLabel.swift in Sources */,
@@ -487,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = T3L732D2U5;
 				INFOPLIST_FILE = GruWiBi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -507,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = T3L732D2U5;
 				INFOPLIST_FILE = GruWiBi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

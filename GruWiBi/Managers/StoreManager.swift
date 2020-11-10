@@ -19,6 +19,8 @@ class StoreManager: NSObject {
         print("State of AnimalPack: \(isAnimalPackUnlocked)")
     }
     
+    var products: [SKProduct]!
+    
     private var fetchCompletionHandler: FetchCompletionHandler?
     private var purchaseCompletionHandler: PurchaseCompletionHandler?
     
@@ -34,7 +36,6 @@ class StoreManager: NSObject {
     }
 }
 
-// MARK: - Store API
 
 extension StoreManager {
     static let buyAllAnimalCardsIdentifier = "LernBio_AnimalCards"
@@ -53,7 +54,6 @@ extension StoreManager {
     func buy(product: SKProduct, _ completion: @escaping PurchaseCompletionHandler) {
         let payment = SKPayment(product: product)
         SKPaymentQueue.default().add(payment)
-     
         purchaseCompletionHandler = completion
     }
     
@@ -136,6 +136,64 @@ extension StoreManager: SKPaymentTransactionObserver {
                 purchaseCompletionHandler?(.failure(GWBError.paymentWasCancelled))
             }
         }
+    }
+    
+    
+    func showBuyAlert(on presentingVC: LoadingVC, for product: SKProduct) {
+        guard let price = StoreManager.shared.getPriceFormatted(for: product) else { return }
+        
+        let ac = UIAlertController(title: "Belohne deinen Lern-Erfolg!", message: "Du hast die 3 gratis AnimalCards bereits freigespielt. Schalte jetzt 47 weitere liebevoll gestaltete AnimalCards zum Freispielen frei und belohne dein Lernen!", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Kaufen für \(price)", style: .default, handler: { _ in
+            presentingVC.showLoadingView()
+            
+            self.buy(product: product) { (result) in
+                switch result {
+                case .success(_):
+                    self.isAnimalPackUnlocked = true
+                    AnimalCardManager.shared.unlockNextAnimalCard()
+                    AnimalCardManager.shared.showNewAnimalAlert(on: presentingVC)
+                    presentingVC.dismissLoadingView()
+                case .failure(let error):
+                    presentingVC.dismissLoadingView()
+                    let ac = UIAlertController(title: "Kauf fehlgeschlagen", message: "Leider war der Kauf nicht erfolgreich. Fehler: \(error)", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                        presentingVC.dismiss(animated: true)
+                    }))
+                    presentingVC.present(ac, animated: true, completion: nil)
+                }
+            }
+        }))
+        ac.addAction(UIAlertAction(title: "Nein, danke.", style: .cancel, handler: {(alert) in
+            presentingVC.dismiss(animated: true, completion: nil)
+        }))
+        presentingVC.present(ac, animated: true, completion: nil)
+    }
+    
+    
+    func showParentalAlert(on presentingVC: UIViewController, completion: @escaping (UIAlertAction) -> Void) {
+        let randomNumber = Int.random(in: 1...1000)
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .spellOut
+        let numberAsWord = formatter.string(from: NSNumber(value: randomNumber))!
+        
+        
+        let parentalAlert = UIAlertController(title: "Zeig diese Meldung deinen Eltern!", message: "Um weitere Cards freizuschalten, ist ein einmaliger In-App-Kauf von 2,29€ notwendig. Sie erwerben damit den Zugang zu 47 weiteren, liebevoll gestalteten Cards. Zur Bestätigung des Kaufs bitte das folgende Wort als Zahl in das Feld eingeben: \n\(String(describing: numberAsWord)) ", preferredStyle: .alert)
+        parentalAlert.addTextField { (textfield) in
+            textfield.placeholder = "Hier Zahl eingeben..."
+            textfield.keyboardType = .numberPad
+        }
+        parentalAlert.addAction(UIAlertAction(title: "Fortfahren", style: .default, handler: { action in
+            if let text = parentalAlert.textFields?.first?.text {
+                if Int(text) == randomNumber {
+                    completion(action)
+                } else {
+                    presentingVC.dismiss(animated: true, completion: nil)
+                }
+            }
+        }))
+        parentalAlert.addAction(UIAlertAction(title: "Abbrechen", style: .cancel, handler: nil))
+        presentingVC.present(parentalAlert, animated: true, completion: nil)
     }
 }
 

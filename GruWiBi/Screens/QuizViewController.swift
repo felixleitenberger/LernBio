@@ -178,8 +178,10 @@ class QuizViewController: LoadingVC {
                     
                 
                 guard StoreManager.shared.isAnimalPackUnlocked || AnimalCardManager.shared.unlockedAnimalCardsIndices.count < 3 else {
-                    if let product = AnimalCardManager.shared.products?.first {
-                        AnimalCardManager.shared.showBuyAlert(on: self, for: product)
+                    if let product = StoreManager.shared.products?.first {
+                        StoreManager.shared.showParentalAlert(on: self) { (action) in
+                            StoreManager.shared.showBuyAlert(on: self, for: product)
+                        }
                     } else {
                         let alertVC = GWBAlertVC(title: "Hm...", message: "Du hast die 3 kostenlosen AnimalCards freigespielt. Der In-App-Kauf kann nicht geladen werden.", buttonTitle: "Ok, was soll's...", animalCardImage: nil)
                         alertVC.buttonAction = { self.dismiss(animated: true, completion: nil)}
