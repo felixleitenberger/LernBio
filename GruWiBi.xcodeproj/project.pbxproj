@@ -36,6 +36,9 @@
 		DCED1D9424475AD100D80082 /* GWBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED1D9324475AD100D80082 /* GWBButton.swift */; };
 		DCED1D9624475D2400D80082 /* GWBAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED1D9524475D2400D80082 /* GWBAlertVC.swift */; };
 		DCED1D9824475DC000D80082 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED1D9724475DC000D80082 /* UIView+Ext.swift */; };
+		DCFDC2F6255A8E7500EF0509 /* StartQuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDC2F5255A8E7500EF0509 /* StartQuizVC.swift */; };
+		DCFDC2F9255A8E8C00EF0509 /* LastAnimalCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDC2F8255A8E8C00EF0509 /* LastAnimalCardVC.swift */; };
+		DCFDC2FC255A8F5A00EF0509 /* LastAnimalCardEmptyStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDC2FB255A8F5A00EF0509 /* LastAnimalCardEmptyStateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		DCED1D9324475AD100D80082 /* GWBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWBButton.swift; sourceTree = "<group>"; };
 		DCED1D9524475D2400D80082 /* GWBAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWBAlertVC.swift; sourceTree = "<group>"; };
 		DCED1D9724475DC000D80082 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		DCFDC2F5255A8E7500EF0509 /* StartQuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartQuizVC.swift; sourceTree = "<group>"; };
+		DCFDC2F8255A8E8C00EF0509 /* LastAnimalCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastAnimalCardVC.swift; sourceTree = "<group>"; };
+		DCFDC2FB255A8F5A00EF0509 /* LastAnimalCardEmptyStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastAnimalCardEmptyStateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +251,9 @@
 			children = (
 				DC57C47A252DFC4500A90D87 /* LoadingVC.swift */,
 				DCED1D9524475D2400D80082 /* GWBAlertVC.swift */,
+				DCFDC2F5255A8E7500EF0509 /* StartQuizVC.swift */,
+				DCFDC2F8255A8E8C00EF0509 /* LastAnimalCardVC.swift */,
+				DCFDC2FB255A8F5A00EF0509 /* LastAnimalCardEmptyStateVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -328,6 +337,7 @@
 				DC16320F242B538500536FA5 /* AnimalCardsViewController.swift in Sources */,
 				DC84A8C4252CD97600B5CB0D /* AnimalCardManager.swift in Sources */,
 				DCED1D92244759FB00D80082 /* GWBAlertContainerView.swift in Sources */,
+				DCFDC2FC255A8F5A00EF0509 /* LastAnimalCardEmptyStateVC.swift in Sources */,
 				DC04235F2552A97600277073 /* SettingsViewController.swift in Sources */,
 				DCED1D9424475AD100D80082 /* GWBButton.swift in Sources */,
 				DC16320B242B515F00536FA5 /* AnimalCard.swift in Sources */,
@@ -337,12 +347,14 @@
 				DCED1D9624475D2400D80082 /* GWBAlertVC.swift in Sources */,
 				DC11C759241A743B00CAF432 /* QuizViewController.swift in Sources */,
 				DC11C755241A743B00CAF432 /* AppDelegate.swift in Sources */,
+				DCFDC2F9255A8E8C00EF0509 /* LastAnimalCardVC.swift in Sources */,
 				DC57C47B252DFC4500A90D87 /* LoadingVC.swift in Sources */,
 				DC45632C252B9464008E01D5 /* StoreManager.swift in Sources */,
 				DC11C757241A743B00CAF432 /* SceneDelegate.swift in Sources */,
 				DC11C769241A746900CAF432 /* Question.swift in Sources */,
 				DC6F2DE62449E56900FF3D66 /* GWBTitleLabel.swift in Sources */,
 				DC8A29FA242CADAE0007FF65 /* AnimalCell.swift in Sources */,
+				DCFDC2F6255A8E7500EF0509 /* StartQuizVC.swift in Sources */,
 				DC163211242B599200536FA5 /* AnimalCardDetailViewController.swift in Sources */,
 				DC929B1B24220BEB00C0C26F /* MainScreenViewController.swift in Sources */,
 			);
