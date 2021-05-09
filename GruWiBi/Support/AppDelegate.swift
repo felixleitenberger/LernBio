@@ -12,19 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        StoreManager.shared.startObservingPaymentQueue()
-        StoreManager.shared.fetchProducts { (result) in
-            switch result {
-            case .success(let products): StoreManager.shared.products = products
-            case .failure(let error): print(error)
-            }
-        }
         return true
-    }
-    
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        StoreManager.shared.stopObservingPaymentQueue()
     }
     
     // MARK: UISceneSession Lifecycle
