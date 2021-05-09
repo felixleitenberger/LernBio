@@ -43,9 +43,9 @@
 
 /* Begin PBXFileReference section */
 		DC04235E2552A97600277073 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		DC11519D25489066001739B6 /* B5+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "B5+questions.json"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Crabucate/GruWiBio/Questions/B5+questions.json"; sourceTree = "<group>"; };
-		DC11519E25489066001739B6 /* B8+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "B8+questions.json"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Crabucate/GruWiBio/Questions/B8+questions.json"; sourceTree = "<group>"; };
-		DC11519F25489066001739B6 /* B6+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "B6+questions.json"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Crabucate/GruWiBio/Questions/B6+questions.json"; sourceTree = "<group>"; };
+		DC11519D25489066001739B6 /* B5+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B5+questions.json"; sourceTree = "<group>"; };
+		DC11519E25489066001739B6 /* B8+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B8+questions.json"; sourceTree = "<group>"; };
+		DC11519F25489066001739B6 /* B6+questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "B6+questions.json"; sourceTree = "<group>"; };
 		DC11C751241A743B00CAF432 /* LernBIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LernBIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC11C754241A743B00CAF432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC11C756241A743B00CAF432 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
