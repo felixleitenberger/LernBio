@@ -21,14 +21,11 @@
 		DC16320B242B515F00536FA5 /* AnimalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16320A242B515F00536FA5 /* AnimalCard.swift */; };
 		DC16320F242B538500536FA5 /* AnimalCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */; };
 		DC163211242B599200536FA5 /* AnimalCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */; };
-		DC45632C252B9464008E01D5 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45632B252B9464008E01D5 /* StoreManager.swift */; };
-		DC456330252BA165008E01D5 /* StoreConfig.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DC45632F252BA165008E01D5 /* StoreConfig.storekit */; };
 		DC4BA55724201A780043280B /* QuestionStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BA55624201A780043280B /* QuestionStatusBar.swift */; };
 		DC57C47B252DFC4500A90D87 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57C47A252DFC4500A90D87 /* LoadingVC.swift */; };
 		DC6E852224CB396C000ED635 /* animalCards.json in Resources */ = {isa = PBXBuildFile; fileRef = DC6E852124CB396C000ED635 /* animalCards.json */; };
 		DC6F2DE52449E56900FF3D66 /* GWBBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F2DE32449E56900FF3D66 /* GWBBodyLabel.swift */; };
 		DC6F2DE62449E56900FF3D66 /* GWBTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F2DE42449E56900FF3D66 /* GWBTitleLabel.swift */; };
-		DC849BC72525B1E700B2D7BB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC849BC62525B1E700B2D7BB /* StoreKit.framework */; };
 		DC84A8C4252CD97600B5CB0D /* AnimalCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84A8C3252CD97600B5CB0D /* AnimalCardManager.swift */; };
 		DC8A29FA242CADAE0007FF65 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */; };
 		DC929B1B24220BEB00C0C26F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */; };
@@ -58,14 +55,11 @@
 		DC16320A242B515F00536FA5 /* AnimalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCard.swift; sourceTree = "<group>"; };
 		DC16320E242B538500536FA5 /* AnimalCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardsViewController.swift; sourceTree = "<group>"; };
 		DC163210242B599200536FA5 /* AnimalCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardDetailViewController.swift; sourceTree = "<group>"; };
-		DC45632B252B9464008E01D5 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
-		DC45632F252BA165008E01D5 /* StoreConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreConfig.storekit; sourceTree = "<group>"; };
 		DC4BA55624201A780043280B /* QuestionStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStatusBar.swift; sourceTree = "<group>"; };
 		DC57C47A252DFC4500A90D87 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		DC6E852124CB396C000ED635 /* animalCards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalCards.json; sourceTree = "<group>"; };
 		DC6F2DE32449E56900FF3D66 /* GWBBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBBodyLabel.swift; sourceTree = "<group>"; };
 		DC6F2DE42449E56900FF3D66 /* GWBTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBTitleLabel.swift; sourceTree = "<group>"; };
-		DC849BC62525B1E700B2D7BB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DC84A8C3252CD97600B5CB0D /* AnimalCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardManager.swift; sourceTree = "<group>"; };
 		DC8A29F9242CADAD0007FF65 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		DC929B1A24220BEB00C0C26F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC849BC72525B1E700B2D7BB /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +88,6 @@
 			children = (
 				DC11C753241A743B00CAF432 /* GruWiBi */,
 				DC11C752241A743B00CAF432 /* Products */,
-				DC849BC52525B1E700B2D7BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,14 +153,6 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		DC849BC52525B1E700B2D7BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DC849BC62525B1E700B2D7BB /* StoreKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DCB889FC253C7E5C00ABEC1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +165,6 @@
 		DCB889FD253C7EC900ABEC1C /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				DC45632F252BA165008E01D5 /* StoreConfig.storekit */,
 				DC11C75D241A743E00CAF432 /* Assets.xcassets */,
 				DC11C75F241A743E00CAF432 /* LaunchScreen.storyboard */,
 				DC11C754241A743B00CAF432 /* AppDelegate.swift */,
@@ -240,7 +223,6 @@
 		DCB88A04253C800C00ABEC1C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				DC45632B252B9464008E01D5 /* StoreManager.swift */,
 				DC84A8C3252CD97600B5CB0D /* AnimalCardManager.swift */,
 			);
 			path = Managers;
@@ -322,7 +304,6 @@
 				DC6E852224CB396C000ED635 /* animalCards.json in Resources */,
 				DC11C75E241A743E00CAF432 /* Assets.xcassets in Resources */,
 				DC11C75C241A743B00CAF432 /* Main.storyboard in Resources */,
-				DC456330252BA165008E01D5 /* StoreConfig.storekit in Resources */,
 				DC1151A225489066001739B6 /* B6+questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +330,6 @@
 				DC11C755241A743B00CAF432 /* AppDelegate.swift in Sources */,
 				DCFDC2F9255A8E8C00EF0509 /* LastAnimalCardVC.swift in Sources */,
 				DC57C47B252DFC4500A90D87 /* LoadingVC.swift in Sources */,
-				DC45632C252B9464008E01D5 /* StoreManager.swift in Sources */,
 				DC11C757241A743B00CAF432 /* SceneDelegate.swift in Sources */,
 				DC11C769241A746900CAF432 /* Question.swift in Sources */,
 				DC6F2DE62449E56900FF3D66 /* GWBTitleLabel.swift in Sources */,
@@ -503,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T3L732D2U5;
 				INFOPLIST_FILE = GruWiBi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -511,7 +491,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.crabucate.LernBio;
 				PRODUCT_NAME = LernBIO;
 				SWIFT_VERSION = 5.0;
@@ -524,7 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T3L732D2U5;
 				INFOPLIST_FILE = GruWiBi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -532,7 +512,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.crabucate.LernBio;
 				PRODUCT_NAME = LernBIO;
 				SWIFT_VERSION = 5.0;

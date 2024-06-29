@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LastAnimalCardVCDelegate: class {
+protocol LastAnimalCardVCDelegate: AnyObject {
     func didTapShowCard()
 }
 

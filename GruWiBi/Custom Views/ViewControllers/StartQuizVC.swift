@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol StartQuizVCDelegate: class {
+protocol StartQuizVCDelegate: AnyObject {
     func didStartQuiz(classes: [String])
 }
 
