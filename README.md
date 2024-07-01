@@ -2,7 +2,8 @@
 ## Description
 It's a **quiz app** for basic biology knowledge. There is some gamification with **Animal Cards** you can achieve. It was in the app store for some time but not successful enough to create revenue.
 ## Technologies
-- written in UIKit
+- written in Swift
+- UIKit with Storyboards
 - questions and animal cards are fetched from local json-files
 - StoreKit was used for in-app-purchase
 ## Screenshots
