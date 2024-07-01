@@ -1,6 +1,6 @@
 # Lern Bio
 ## Description
-It's a **quiz app** for basic biology knowledge. There is some gamification with **Animal Cards** you can achieve. It was in the app store for some time but not successful enough to create revenue.
+It's a **quiz app** for basic biology knowledge. There is some gamification with **Animal Cards** you can achieve. It was in the app store for some time.
 ## Technologies
 - written in Swift
 - UIKit with Storyboards
